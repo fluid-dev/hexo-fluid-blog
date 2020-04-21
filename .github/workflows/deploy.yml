@@ -1,0 +1,39 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download Branch
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Prepare Node Env
+      uses: actions/setup-node@v1
+      with:
+        node-version: "10.x"
+
+    - name: Hexo Generate
+      run: |
+        rm -f .yarnclean
+        yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
+        rm -rf ./public
+        yarn run hexo clean
+        yarn run hexo generate
+
+    - name: Upload to OSS
+      env:
+        OSS_AccessKeyID: ${{ secrets.OSS_AccessKeyID }}
+        OSS_AccessKeySecret: ${{ secrets.OSS_AccessKeySecret }}
+      run: |
+        wget -q http://gosspublic.alicdn.com/ossutil/1.6.10/ossutil64
+        chmod +x ./ossutil64
+        ./ossutil64 config -e oss-ap-southeast-1.aliyuncs.com -i $OSS_AccessKeyID -k $OSS_AccessKeySecret -L CH
+        ./ossutil64 cp -r -f oss://fluid-dev/docs ./public/
+        ./ossutil64 rm -r -f oss://fluid-dev/
+        ./ossutil64 cp -r -f ./public oss://fluid-dev/

@@ -1,0 +1,4 @@
+[submodule "themes/fluid"]
+	path = themes/fluid
+	url = https://github.com/fluid-dev/hexo-theme-fluid
+	branch = develop
