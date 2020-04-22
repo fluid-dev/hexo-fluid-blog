@@ -10,8 +10,11 @@ jobs:
     steps:
     - name: Download Branch
       uses: actions/checkout@v2
-      with:
-        submodules: true
+
+    - name: Update Submodule
+      run: |
+        git submodule init
+        git submodule update --remote
 
     - name: Prepare Node Env
       uses: actions/setup-node@v1
