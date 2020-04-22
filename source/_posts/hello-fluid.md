@@ -1,10 +1,10 @@
 ---
 title: Hello Fluid
-date: 2020-04-22 00:00:00
-category: 示例
+date: 2020-04-22 22:22:22
+index_img: /img/posts/hello-fluid/cover.png
+category: 主题示例
 tags:
   - 示例
-  - 主题
   - Fluid
 math: true
 mermaid: true
@@ -16,6 +16,8 @@ mermaid: true
 
 ## 文字
 
+文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
+
 ### H3 标题
 
 #### H4 标题
@@ -26,10 +28,11 @@ _斜体_
 
 ## 代码
 
-`$ hexo new post "My New Post"`
+行内代码：`$ hexo new post "My New Post"`
+
+代码高亮使用的是 highlight.js，支持 185 种语言和 91 种高亮样式：
 
 ```python
-# Python
 def fib(n):
     a, b = 0, 1
     while a < n:
@@ -40,7 +43,6 @@ fib(1000)
 ```
 
 ```go
-// Golang
 type Map struct {
     mu Mutex
     read atomic.Value
@@ -59,13 +61,17 @@ type Map struct {
 
 ## 列表
 
-（有序列表）该主题相较于其他主题的优势：
+### 有序列表
+
+Fluid 相较于其他主题的优势：
 
 1. 设计遵循简洁至上，同时具有轻快的体验，和优雅的颜值；
 2. 提供大量定制化配置项，使每个用户使用该主题都能具有独特的样式；
 3. 响应式页面，适配手机、平板等设备；
 
-（无序列表）功能特性：
+### 无序列表
+
+Fluid 功能特性：
 
 - 图片懒加载
 - 自定义代码高亮方案
@@ -146,4 +152,3 @@ Class01 : int chimp
 Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
-
