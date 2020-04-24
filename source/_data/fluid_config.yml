@@ -149,7 +149,7 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: /img/wallpapers/index.png  # 首页 Banner 头图，以下相同
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/st4bun.png?w=1920&fmt=webp  # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
   banner_mask_alpha: 0.3  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img: '' # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
@@ -167,7 +167,7 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: /img/wallpapers/index.png
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/post.png?w=1920&fmt=webp
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
 
@@ -176,7 +176,7 @@ page:
 # Post Page
 #---------------------------
 post:  # 部分配置同时控制自定义页面，注意备注
-  banner_img: /img/wallpapers/index.png
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/dojm2h.png?w=1920&q=100&fmt=webp
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
@@ -209,9 +209,6 @@ post:  # 部分配置同时控制自定义页面，注意备注
   custom:  # 文章底部自定义内容
     enable: false
     content: '<img src="https://octodex.github.com/images/jetpacktocat.png" class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">' # 自定义区域，支持 HTML，可自行插入赞赏码、公众号二维码等内容
-  comments:  # 评论
-    enable: false  # 开启评论
-    type: disqus  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
   image_zoom:  # 文章图片可点击放大
     enable: true  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `image_zoom: true`，并且图片使用该格式插入：<img src="..." zoom />
   math:  # 数学公式，开启之前需要更换 Markdown 渲染器，否则复杂公式会有兼容问题，具体请见：https://hexo.fluid-dev.com/docs/guide/##latex-数学公式
@@ -222,13 +219,16 @@ post:  # 部分配置同时控制自定义页面，注意备注
     enable: true  # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
     specific: true  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
+  comments:  # 评论
+    enable: false  # 开启评论
+    type: disqus  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
 
 #---------------------------
 # 评论
 # Comments
 #---------------------------
 
-# 开启评论在上方的 post.comments 配置
+# 开启评论需要先在上方 post.comments.enable: true
 
 # utterances
 # You can install utterances with https://utteranc.es/ and generate your configuration
@@ -294,7 +294,7 @@ livere:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/wallpapers/index.png
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/1cm6iu.png?w=1920&fmt=webp
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -304,7 +304,7 @@ archive:
 # Categories Page
 #---------------------------
 category:
-  banner_img: /img/wallpapers/index.png
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/sdqryn.png?w=1920&fmt=webp
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -314,7 +314,7 @@ category:
 # Tags Page
 #---------------------------
 tag:
-  banner_img: /img/wallpapers/index.png
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/n7a9bv.png?w=1920&fmt=webp
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -331,7 +331,7 @@ tag:
 # About Page
 #---------------------------
 about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/about.md 中编辑，支持 markdown 和 HTML
-  banner_img: /img/wallpapers/index.png
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/4xvpqo.png?w=1920&fmt=webp
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
@@ -348,8 +348,8 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
 # 404 Page
 #---------------------------
 page404:
-  banner_img: /img/wallpapers/index.png
-  banner_img_height: 80  # available: 0 - 100
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/g8xjqe.png?w=1920&fmt=webp
+  banner_img_height: 85  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 'Page not found'  # 打字机内容
 
@@ -359,7 +359,7 @@ page404:
 # Links Page
 #---------------------------
 links:
-  banner_img: /img/wallpapers/index.png
+  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/73twhs.png?w=1920&fmt=webp
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容

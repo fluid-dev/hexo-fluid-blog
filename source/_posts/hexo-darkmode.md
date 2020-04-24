@@ -1,7 +1,7 @@
 ---
 title: Hexo 暗黑模式
-date: 2020-04-22 18:04:57
-index_img: https://rmt.dogedoge.com/fetch/royce/storage/darkmode/cover.png?fmt=webp
+date: 2020-04-23 18:04:57
+index_img: https://rmt.dogedoge.com/fetch/royce/storage/darkmode/cover.png?w=480&fmt=webp
 category: 功能增强
 tags:
   - 用户经验
@@ -220,11 +220,11 @@ function switchDarkMode() {
 
 下面是支持该特性的最低版本
 
-![](https://rmt.dogedoge.com/fetch/royce/storage/darkmode/01.png?fmt=webp)
+![](https://rmt.dogedoge.com/fetch/royce/storage/darkmode/01.png?w=1280&fmt=webp)
 
 可以在浏览器控制台中查看他们的值
 
-![](https://rmt.dogedoge.com/fetch/royce/storage/darkmode/02.png?fmt=webp)
+![](https://rmt.dogedoge.com/fetch/royce/storage/darkmode/02.png?w=1280&fmt=webp)
 
 ---
 

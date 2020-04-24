@@ -1,7 +1,7 @@
 ---
 title: 给 Hexo 博客添加 PWA 支持
 date: 2020-04-23 14:21:33
-index_img: /img/posts/hexo-pwa/cover.png
+index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-pwa/cover.png?w=480&fmt=webp
 category: 功能增强
 tags:
   - 用户经验
@@ -107,7 +107,7 @@ PWA（Progressive Web App）的中文名叫做「渐进式网页应用」，早�
 
 配置好`manifest.json`后进行调试，打开浏览器的控制台如下图所示，即文件配置成功。
 
-![](/img/posts/hexo-pwa/1.png)
+![](https://rmt.dogedoge.com/fetch/fluid/storage/hexo-pwa/1.png?w=1280&fmt=webp)
 
 ### 离线使用
 
@@ -163,7 +163,7 @@ service_worker:
 
 然后执行生成发布。使用新版的chrome访问网站，打开控制台的`Audits`点击生成报告，就能看到网站是否支持PWA啦，如下图所示：
 
-![](/img/posts/hexo-pwa/2.png)
+![](https://rmt.dogedoge.com/fetch/fluid/storage/hexo-pwa/2.png?w=1280&fmt=webp)
 
 发布之后可以先访问一下网站的一些页面，然后就可以拿把大剪子网线访问你的网站啦~
 
