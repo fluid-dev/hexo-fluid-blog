@@ -102,6 +102,11 @@ function switchDarkMode() {
 
 /*暗黑模式*/
 .dark
+  background-color #282c34
+
+  /* 背景遮罩 */
+  .mask
+    background-color rgba(0,0,0,.7) !important
 
   /* 主体 */
   #board 
