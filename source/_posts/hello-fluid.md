@@ -152,3 +152,43 @@ Class01 : int chimp
 Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
+
+## 内置 Tag 插件
+
+内置了一些 Tag 插件，用于实现 Markdown 不容易生成的样式，具体使用方式请见 [用户指南](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)。
+
+### 便签
+
+{% note primary %}
+这里可以写文字 或者 `markdown`
+{% endnote %}
+
+{% note warning %}
+这里可以写文字 或者 `markdown`
+{% endnote %}
+
+{% note danger %}
+这里可以写文字 或者 `markdown`
+{% endnote %}
+
+### 行内标签
+
+{% label primary @行内标签 %} {% label warning @行内标签 %} {% label danger @行内标签 %}
+
+### 勾选框
+
+{% cb 主要是解决一些 Renderer 不支持勾选, true %}
+
+### 按钮
+
+{% btn javascript:;, 支持链接 %}
+
+### 组图
+
+{% gi 5 3-2 %}
+  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+{% endgi %}
