@@ -220,8 +220,8 @@ post:  # 部分配置同时控制自定义页面，注意备注
     specific: true  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
   comments:  # 评论
-    enable: false  # 开启评论
-    type: disqus  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
+    enable: true  # 开启评论
+    type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
 
 #---------------------------
 # 评论
@@ -265,17 +265,17 @@ gitalk:
 # 完整文档 https://valine.js.org/configuration.html
 # 注意：下列配置项中的 true/false 不要用引号括起来
 valine:
-  appid:  # 从 LeanCloud 的应用中得到的 appId
-  appkey:  # 从 LeanCloud 的应用中得到的 APP Key
-  placeholder: 说点什么 # 评论框占位提示符
+  appid: LyT8mpSI2Jq9CRhOtNOgBXkE-9Nh9j0Va # 从 LeanCloud 的应用中得到的 appId
+  appkey: fUOlkXhD9wcmxOTed9NdlqPH # 从 LeanCloud 的应用中得到的 APP Key
+  placeholder: 留言仅限讨论，禁止广告等行为 # 评论框占位提示符
   path: window.location.pathname # 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表
-  avatar: retro # Gravatar 头像展示方式
-  meta: ['nick', 'mail', 'link']  # 评论者相关属性
+  avatar: robohash # Gravatar 头像展示方式
+  meta: ['nick']  # 评论者相关属性
   pageSize: 10 # 评论列表分页，每页条数
   lang: zh-CN # zh-CN | zh-TW | en | ja
-  highlight: false # 代码高亮
-  recordIP: false # 是否记录评论者IP
-  serverURLs: # 该配置适用于国内自定义域名用户, 海外版本会自动检测(无需手动填写)
+  highlight: true # 代码高亮
+  recordIP: true # 是否记录评论者IP
+  serverURLs: https://lyt8mpsi.lc-cn-e1-shared.com # 该配置适用于国内自定义域名用户, 海外版本会自动检测(无需手动填写)
 
 # 畅言
 # http://changyan.kuaizhan.com/
