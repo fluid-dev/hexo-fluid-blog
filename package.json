@@ -1,5 +1,5 @@
 {
-  "name": "hexo-fluid-demo",
+  "name": "hexo-fluid-blog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,10 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "dependencies": {
-    "hexo": "^4.2.0",
+    "hexo": "^4.2.1",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.6",
