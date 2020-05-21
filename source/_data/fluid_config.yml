@@ -107,7 +107,17 @@ navbar:
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }  # 友链页，把前面#去掉即可展示
+    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+    - {
+        key: '文档',
+        icon: 'iconfont icon-books',
+        link: '#',
+        submenu: [
+          { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/guide/' },
+          { key: '操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' },
+          { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/icon/' }
+        ]
+    }
 
 search: # 搜索栏
   enable: true
