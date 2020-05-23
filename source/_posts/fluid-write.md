@@ -5,6 +5,7 @@ index_img: https://cdn.vince.pub/blog-file/photo/fluid-write.jpg
 category: 主题示例
 tags: 
   - 用户经验
+  - 示例
   - Fluid
 excerpt: Fluid 是一款很优雅的主题，主要介绍从使用主题拓展和配图来写作。
 ---
