@@ -5,6 +5,7 @@ index_img: https://rmt.dogedoge.com/fetch/fluid/storage/actions-deploy/cover.png
 category: 实用技巧
 tags:
   - 部署
+  - 示例
   - Hexo
 ---
 
@@ -67,15 +68,23 @@ jobs:
         yarn run hexo deploy
 ```
 
-`{% raw %}${{ secrets.SSH_PRIVATE }}{% endraw %}` 这种调用方式，需要提前在下图中设置变量，这样可以避免一些敏感信息放在 yml 文件中被泄漏。
+只要配置了 hexo deploy 的都可以通过上面这种方式部署，注意如果是在其他 Pages 部署（比如Coding Pages 或者 码云 Pages），`ssh-keyscan` 需要进行增改，比如：
+
+```yaml
+# hexo 同时配置了 github 和 gitee 两种部署
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+```
+
+然后 `{% raw %}${{ secrets.SSH_PRIVATE }}{% endraw %}` 这种调用方式，需要提前在下图中设置常量：
 
 ![](https://rmt.dogedoge.com/fetch/fluid/storage/actions-deploy/1.png?w=1280&fmt=webp)
 
+这样做可以避免敏感数据放在 yml 文件中被泄漏，即使你是私有仓库也建议这样做，因为设置的常量是无法被二次查看的，就算你账号被盗也不用担心。
+
 ## 常用步骤配置
 
-以上是以部署 hexo deploy 为例，GitHub Pages、Coding Pages 或者 码云 Pages 都可以用这种方式。
-
-下面再提供几种其他常见的部署配置，注意修改你自己的变量参数。
+以上是以部署 hexo deploy 为例，下面再提供几种其他常见的部署配置，注意修改你自己的变量参数。
 
 ### 阿里云 OSS
 
