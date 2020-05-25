@@ -13,7 +13,7 @@ layout: about
 
 ## 转载文章
 
-如果你有 Fluid 主题或 Hexo 博客相关的文章，可以通过 [Pull Request](https://github.com/fluid-dev/hexo-fluid-blog) 方式提交（文中图片可暂时使用自己的外链或存放在 source 里），不要忘记文章头部留下自己的原文链接（[参考](https://raw.githubusercontent.com/fluid-dev/hexo-fluid-blog/master/source/_posts/hexo-darkmode.md)）。
+如果你有 Fluid 主题或 Hexo 博客相关的文章，可以通过 [Pull Request](https://github.com/fluid-dev/hexo-fluid-blog/pulls) 方式提交（文中图片可暂时使用自己的外链或存放在 source 里），不要忘记文章头部留下自己的原文链接（[格式参考](https://raw.githubusercontent.com/fluid-dev/hexo-fluid-blog/master/source/_posts/hexo-darkmode.md)）。
 
 ## 微信交流群
 
