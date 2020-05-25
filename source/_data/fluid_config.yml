@@ -280,7 +280,7 @@ valine:
   placeholder: 留言仅限讨论，禁止广告等行为 # 评论框占位提示符
   path: window.location.pathname # 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表
   avatar: robohash # Gravatar 头像展示方式
-  meta: ['nick']  # 评论者相关属性
+  meta: ['nick', 'mail']  # 评论者相关属性
   pageSize: 10 # 评论列表分页，每页条数
   lang: zh-CN # zh-CN | zh-TW | en | ja
   highlight: true # 代码高亮
