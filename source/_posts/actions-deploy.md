@@ -68,12 +68,13 @@ jobs:
         yarn run hexo deploy
 ```
 
-只要配置了 hexo deploy 的都可以通过上面这种方式部署，注意如果是在其他 Pages 部署（比如Coding Pages 或者 码云 Pages），`ssh-keyscan` 需要进行增改，比如：
+只要配置了 hexo deploy 的都可以通过上面这种方式部署，注意如果是在其他 Pages 部署（比如Coding Pages 或者 码云 Pages），`ssh-keyscan` 需要进行增改：
 
 ```yaml
-# hexo 同时配置了 github 和 gitee 两种部署
+# github、gitee 和 coding 三种 Pages 的示例，根据需求替换上例中语句，需要注意的是 coding 是使用二级域名。
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
 ```
 
 然后 `{% raw %}${{ secrets.SSH_PRIVATE }}{% endraw %}` 这种调用方式，需要提前在下图中设置常量：
@@ -120,7 +121,7 @@ ssh-keyscan gitee.com >> ~/.ssh/known_hosts
 
 ```yaml
 - name: Deploy to Tencent CloudBase
-  uses: TencentCloudBase/cloudbase-action@v1
+  uses: TencentCloudBase/cloudbase-action@v1.1.1
   with:
     secretId: ${{ secrets.SECRET_ID }}
     secretKey: ${{ secrets.SECRET_KEY }}
