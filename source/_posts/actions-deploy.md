@@ -71,8 +71,9 @@ jobs:
 只要配置了 hexo deploy 的都可以通过上面这种方式部署，注意如果是在其他 Pages 部署（比如Coding Pages 或者 码云 Pages），`ssh-keyscan` 需要进行增改，比如：
 
 ```yaml
-# hexo 同时配置了 github 和 gitee 两种部署
+# hexo 同时配置了 github，coding 和 gitee 三种部署，需要注意的是 coding 需要使用二级域名。
 ssh-keyscan github.com >> ~/.ssh/known_hosts
+ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
 ssh-keyscan gitee.com >> ~/.ssh/known_hosts
 ```
 
@@ -120,7 +121,7 @@ ssh-keyscan gitee.com >> ~/.ssh/known_hosts
 
 ```yaml
 - name: Deploy to Tencent CloudBase
-  uses: TencentCloudBase/cloudbase-action@v1
+  uses: TencentCloudBase/cloudbase-action@v1.1.1
   with:
     secretId: ${{ secrets.SECRET_ID }}
     secretKey: ${{ secrets.SECRET_KEY }}
