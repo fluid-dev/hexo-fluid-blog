@@ -126,18 +126,19 @@ ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
     secretId: ${{ secrets.SECRET_ID }}
     secretKey: ${{ secrets.SECRET_KEY }}
     envId: ${{ secrets.ENV_ID }}
-    staticSrcPath: public
+    staticSrcPath: ./public
 ```
 
 ### 服务器
 
-如果是直接部署在服务器上，需要通过 SFTP 协议来完成上传操作，因此确保你的服务器开启了 SFTP 服务。
+如果是直接部署在服务器上，需要通过 FTP/SFTP 协议来完成上传操作，因此确保你的服务器开启了 FTP 服务。
 
 ```yaml
 - name: Deploy to Server
   uses: SamKirkland/FTP-Deploy-Action@3.1.1
   with:
-    ftp-server: ${{ secrets.SFTP_SERVER }}
-    ftp-username: ${{ secrets.SFTP_USERNAME }}
-    ftp-password: ${{ secrets.SFTP_PASSWORD }}
+    ftp-server: ${{ secrets.FTP_SERVER }}      # eg: ftp://ftp.xxx.com:22/mypath
+    ftp-username: ${{ secrets.FTP_USERNAME }}
+    ftp-password: ${{ secrets.FTP_PASSWORD }}
+    local-dir: ./public
 ```
