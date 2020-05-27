@@ -192,3 +192,12 @@ Class08 <--> C2: Cool label
   ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
   ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
 {% endgi %}
+
+### 脚注
+
+以下是脚注演示[^1]：
+
+如果你有 Fluid 主题或 Hexo 博客相关的文章，可以通过 Pull Request 方式投稿[^2]。
+
+[^1]: 脚注演示
+[^2]: 投稿具体详见[https://github.com/fluid-dev/hexo-fluid-blog](https://github.com/fluid-dev/hexo-fluid-blog)

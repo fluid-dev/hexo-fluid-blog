@@ -45,16 +45,12 @@ Fluid Blog|https://hexo.fluid-dev.com/|Fluid 官方博客
 
 #### 脚注
 
-默认渲染器下正常显示，不同渲染器显示效果不同。
-
-脚注演示[^footnote]
- [^footnote]: 脚注内容演示
+默认渲染器下正常显示，不同渲染器显示效果不同，写法如下：
 
 ```
-脚注演示[^footnote]
- [^footnote]: 脚注内容演示
+脚注演示[^1]
+[^1]: 脚注内容演示
 ```
-
 
 ### 善用 HTML
 
