@@ -5,10 +5,10 @@ category: 实用技巧
 tags:
   - 服务器备份
   - Jupyter
-  - nginx
-excerpt: 尝试用服务器来丰富博客，
-abbrlink: 25822
-date: 2020-05-28 15:00:00
+  - Nginx重定向
+excerpt: 尝试用服务器来丰富博客内容，主要包括服务器端的备份(hexo b)和Jupyter的设定。
+date: 2020-05-28 14:30:00
+mathjax: true
 ---
 
 {% note success %}
@@ -258,7 +258,7 @@ Everything up-to-date
 ==================Auto Backup Complete============================
 ```
 
-服务器的文件夹`/home/backup`下可看到`Hexo backup`的备份文件。同时，文件夹`/home/hexo`是`hexo deploy`的部署文件，通过`Nginx`提供 `Web 服务`。这就实现了服务器部署和备份的自动化操作。
+服务器的文件夹`/home/backup`下可看到`Hexo backup`的备份文件，服务器端备份的文件与`github`或`coding`备份文件一致。同时，文件夹`/home/hexo`是`hexo deploy`的部署文件，通过`Nginx`提供 `Web 服务`。这就实现了服务器部署和备份的自动化操作。
 
 {% note primary %}
 **Tips**:如果遇到程序没有报错但文件夹上传失败时，可以手动删除`Hexo`根目录下的`.deploy_git` 文件夹，再重新部署和备份。
