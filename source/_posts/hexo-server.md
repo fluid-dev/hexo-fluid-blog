@@ -354,7 +354,7 @@ http://域名:8888
 # 添加清华源
 $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-$ $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge 
+$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge 
 $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 $ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
 
@@ -479,7 +479,7 @@ $ nginx -t
   - 结果：
 
     - `https://pxxyyz.com/jupyter`、`http://pxxyyz.com/jupyter`、`http://pxxyyz.com:8888`和`http://HostIP:8888`均能打开`Jupyter notebook`
--  但**IP的SSL证书不免费**！`https+port`的组合访问会出错。
+    -  但**IP的SSL证书不免费**！`https+port`的组合访问会出错。
 
 ## 补充
 
