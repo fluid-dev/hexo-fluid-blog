@@ -17,7 +17,7 @@ mathjax: true
 
 本文作者：pxxyyz
 
-原文地址：https://pxxyyz.com/posts/32990/、https://pxxyyz.com/posts/60533/
+原文地址：<https://pxxyyz.com/posts/32990/>、<https://pxxyyz.com/posts/60533/>
 {% endnote %}
 
 ## 前言
@@ -32,7 +32,7 @@ mathjax: true
 
 ## 云服务器备份
 
-参考<u>**Hexo博客部署到腾讯云服务器**</u>[<sup>1</sup>](#refer-anchor-1)后遇到了两个问题：
+参考「Hexo博客部署到腾讯云服务器」[^1]后遇到了两个问题：
 
 
 1. 每次在本地部署博客时都要重复输入密码
@@ -55,7 +55,7 @@ mathjax: true
 
 ### 免密git
 
-在这一部分参照了<u>**使用Git+Hooks实现Hexo站点自动部署到CentOS服务器上**</u>[<sup>2</sup>](#refer-anchor-2)的配置SSH免密登陆步骤。
+在这一部分参照了「使用Git+Hooks实现Hexo站点自动部署到CentOS服务器上」[^2]的配置SSH免密登陆步骤。
 
 ```bash
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub your_user_name@HostIP  //添加公钥
@@ -66,7 +66,7 @@ $ ssh your_user_name@HostIP //验证是否添加成功
 
 ### 自动备份
 
-这里我按照<u>**deploy的流程在服务器设置了自动化备份**</u>[<sup>1</sup>](#refer-anchor-1)，主要思路是在服务器设置一个独立的文件夹`backup`，再用类似**deploy**的钩子`blog.git`，构造一个备份的钩子`deploy.git`将博客的备份文件上传。
+这里我按照「deploy的流程在服务器设置了自动化备份」[^1]，主要思路是在服务器设置一个独立的文件夹`backup`，再用类似**deploy**的钩子`blog.git`，构造一个备份的钩子`deploy.git`将博客的备份文件上传。
 
 - 获取`root`权限
 
@@ -135,7 +135,7 @@ fatal: 'xxx' does not appear to be a git repository
 fatal: Could not read from remote repository.
 ```
 
-我通过搜索`fatal-does-not-appear-to-be-a-git-repository`找到解决思路，用`Git命令`自动备份。详细参见<u>**HEXO博客实现自动备份**</u>[<sup>3</sup>](#refer-anchor-3)。
+我通过搜索`fatal-does-not-appear-to-be-a-git-repository`找到解决思路，用`Git命令`自动备份。详细参见「HEXO博客实现自动备份」[^3]。
 
 - 安装 `shelljs` 模块
 
@@ -267,7 +267,7 @@ Everything up-to-date
 
 ## 访问Jupyter
 
-下面以域名`pxxyyz.com`为例，首先需要在服务器开启`Jupyter`[<sup>4</sup>](#refer-anchor-4)
+下面以域名`pxxyyz.com`为例，首先需要在服务器开启`Jupyter`[^4]
 
 ### 安装Jupyter
 
@@ -391,7 +391,7 @@ $ conda config --remove-key channels
 
 {% endnote %}
 
-- 在此之前上传了`SSL证书`并配置`HTTPS`[<sup>5</sup>](#refer-anchor-5)
+- 在此之前上传了`SSL证书`并配置`HTTPS`[^5]
 - 修改服务器配置文件
 
 ```bash
@@ -475,7 +475,7 @@ $ nginx -t
 
   - 因此问题出在**http的域名强制转成https**
 
-  - 解决方法：遇到指定链接用`return 302`返回**http**从而得到正确的结果[<sup>6</sup>](#refer-anchor-6)
+  - 解决方法：遇到指定链接用`return 302`返回**http**从而得到正确的结果[^6]
 
   - 结果：
 
@@ -486,7 +486,7 @@ $ nginx -t
 
 ### 数学公式
 
-在此补充一下之前公式不显示的问题。虽然[Fluid](https://hexo.fluid-dev.com/docs/)主题支持**LaTeX 数学公式**，但是需要手动操作，而且我按照[教程](https://hexo.fluid-dev.com/docs/guide/#latex-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F)开启本功能`mathjax`没有成功，即公式在网页里并没有被渲染和转换。通过网上查找，发现解决这类问题的思路主要是换渲染引擎[<sup>7</sup>](#refer-anchor-7)，例如`pandoc`、`mathjax`、`katex`。我目前使用`mathjax`，操作如下：
+在此补充一下之前公式不显示的问题。虽然[Fluid](https://hexo.fluid-dev.com/docs/)主题支持**LaTeX 数学公式**，但是需要手动操作，而且我按照[教程](https://hexo.fluid-dev.com/docs/guide/#latex-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F)开启本功能`mathjax`没有成功，即公式在网页里并没有被渲染和转换。通过网上查找，发现解决这类问题的思路主要是换渲染引擎[^7]，例如`pandoc`、`mathjax`、`katex`。我目前使用`mathjax`，操作如下：
 
 - **卸载**默认引擎，并**安装**这个新的渲染引擎
 
@@ -595,10 +595,10 @@ githubEmojis:
 
  ```
 # 不空行会出bug
-{% github_emoji emoji %}
+{% raw %}{% github_emoji emoji %}{% endraw %}
  ```
 
-正如上面所说，传统的`:emoji:`仍然不能正确显示表情，如`:tada:` 得到:tada:，而该插件通过带入`tada`，即`{%github_emoji tada%}(github_emoji tada)`可得到 {% github_emoji tada %} ，其他调用格式可以看`hexo-filter-github-emojis`的[官方文档](https://github.com/crimx/hexo-filter-github-emojis)。
+正如上面所说，Hexo 默认情况下 `:emoji:` 不能正确显示表情，如`:tada:`，而该插件通过 `{% raw %}{%github_emoji tada%}(github_emoji tada){% endraw %}` 即可显示这个 emoji ，其他调用格式可以看 `hexo-filter-github-emojis` 的[官方文档](https://github.com/crimx/hexo-filter-github-emojis)。
 
 ### 一键三连
 
@@ -639,32 +639,16 @@ hexo clean && hexo g && hexo d && hexo b
 
 <div class="note note-danger" style="text-align:center;color:#0000FF;">免密会带来安全隐患，部署和备份文件最好设置为<div class="label label-default" style="color:#FF0000;font-size:1.2em;font-weight: bold;">私密</div></div>
 
-## 参考
+[^1]: [Hexo博客部署到腾讯云服务器](https://www.muyiio.com/2020/03/28/hexo-bo-ke-bu-shu-dao-teng-xun-yun-fu-wu-qi/)
 
-<div id="refer-anchor-1"></div>
+[^2]: [使用Git+Hooks实现Hexo站点自动部署到CentOS服务器上](https://liujunzhou.top/deployer/)
 
-\- [1] [Hexo博客部署到腾讯云服务器](https://www.muyiio.com/2020/03/28/hexo-bo-ke-bu-shu-dao-teng-xun-yun-fu-wu-qi/)
+[^3]: [HEXO博客实现自动备份](https://cwyaml.github.io/2017/03/07/backup/)
 
-<div id="refer-anchor-2"></div>
+[^4]: [搭建 ipython/jupyter notebook 服务器](https://bitmingw.com/2017/07/09/run-jupyter-notebook-server/)
 
-\- [2] [使用Git+Hooks实现Hexo站点自动部署到CentOS服务器上](https://liujunzhou.top/deployer/)
+[^5]: [hexo部署服务器之配置HTTPS](https://www.kylin.show/25251.html)
 
-<div id="refer-anchor-3"></div>
+[^6]: [NGINX rewrite location to another port](https://stackoverflow.com/questions/50734724/nginx-rewrite-location-to-another-port)
 
-\- [3] [HEXO博客实现自动备份](https://cwyaml.github.io/2017/03/07/backup/)
-
-<div id="refer-anchor-4"></div>
-
-\- [4] [搭建 ipython/jupyter notebook 服务器](https://bitmingw.com/2017/07/09/run-jupyter-notebook-server/)
-
-<div id="refer-anchor-5"></div>
-
-\- [5] [hexo部署服务器之配置HTTPS](https://www.kylin.show/25251.html)
-
-<div id="refer-anchor-6"></div>
-
-\- [6] [NGINX rewrite location to another port](https://stackoverflow.com/questions/50734724/nginx-rewrite-location-to-another-port)
-
-<div id="refer-anchor-7"></div>
-
-\- [7] [如何在 hexo 中支持 Mathjax？](https://blog.csdn.net/u014630987/article/details/78670258)
+[^7]: [如何在 hexo 中支持 Mathjax？](https://blog.csdn.net/u014630987/article/details/78670258)
