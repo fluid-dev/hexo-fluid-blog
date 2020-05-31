@@ -80,7 +80,7 @@ web_analytics:  # 网页访问统计
 
 lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
   enable: true
-  onlypost: true  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
+  onlypost: false  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
 
 daovoice:  # 在线客服 Daovoice 参考：http://dashboard.daovoice.io
   enable: false # 是否开启在线客服聊天
