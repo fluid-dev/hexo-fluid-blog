@@ -10,6 +10,14 @@ categories:
 index_img: /thumbnail/rainbow.jpg
 ---
 
+{% note success %}
+本文由 Fluid 用户授权转载，版权归原作者所有。
+
+本文作者：吃白饭
+
+原文地址：<https://eatrice.top/post/Rainbow/>、<https://eatrice.top/post/Rainbow/>
+{% endnote %}
+
 访问 [Rainbow](https://rainbow.eatrice.top/) 吧！
 
 ##  介绍
