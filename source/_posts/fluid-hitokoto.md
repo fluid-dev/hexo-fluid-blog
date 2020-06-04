@@ -173,6 +173,8 @@ fetch('https://v1.hitokoto.cn')
 
 最后也是最重要的，感谢tanxinzheng[^3] (虽然不认识，但是新知识get！😁)。
 
+## 参考
+
 [^1]: [一言开发者中心](https://developer.hitokoto.cn/)
 [^2]: [为您的Hexo博客添加Hitokoto一言功能](https://blog.bill.moe/add-hitokoto/)
 [^3]: [Code World](http://tanxinzheng.github.io/)
