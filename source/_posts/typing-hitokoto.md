@@ -124,9 +124,51 @@ index:
 
 - 当`theme.index.hitokoto.enable == true`时，slogan里的text不在显示，因此只有关闭hitokoto才能在首页显示slogan的text或页面的subtitle
 
+## 出处
+
+1. 如果想加入出处，可在打印`data.hitokoto`后加入`data.from`，以及相应的格式
+
+```ejs
+typing("hitokoto", '『' + data.hitokoto + '』' + '<br /> <h5>'+ '——' + '「' + data.from + '」' + '</h5>')
+```
+
+2. 另一种显示出处的方法是另起一行打印`data.from`，
+
+```
+fetch('https://v1.hitokoto.cn')
+.then(response => response.json())
+.then(data => {
+    typing("hitokoto", data.hitokoto)
+    typing("hitofrom ", data.from)
+})
+.catch(console.error)
+```
+
+- 并在`layout.ejs`添加`<%- hitofrom %>`
+
+```ejs
+<% if(!is_post()) { %>
+<br>
+<span class="h2" id="hitokoto">
+    <% if(theme.fun_features.typing.enable == false) { %>
+    <%- hitokoto %>
+    <% } %>
+</span>
+<br>
+<span class="h2" id="hitofrom">
+    <% if(theme.fun_features.typing.enable == false) { %>
+    <%- hitofrom %>
+    <% } %>
+</span>
+<% } %>
+```
+
+- 第一种是打印一段话，从头到尾只有一个cursorChar，但样式不太好改
+- 第二种是打印两段话，会出现视觉混乱(个人觉得)，样式方便调整
+
 ## 总结
 
-当然这个还可以继续改造下去，例如添加出处(hitofrom)、修改样式等。
+当然这个还可以继续改下去，例如添加出处(hitofrom)、设置循环(loop)、修改样式等。
 
 最后也是最重要的，感谢tanxinzheng[^3] (虽然不认识，但是新知识get！😁)。
 
