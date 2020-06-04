@@ -639,6 +639,8 @@ hexo clean && hexo g && hexo d && hexo b
 
 <div class="note note-danger" style="text-align:center;color:#0000FF;">免密会带来安全隐患，部署和备份文件最好设置为<div class="label label-default" style="color:#FF0000;font-size:1.2em;font-weight: bold;">私密</div></div>
 
+## 参考
+
 [^1]: [Hexo博客部署到腾讯云服务器](https://www.muyiio.com/2020/03/28/hexo-bo-ke-bu-shu-dao-teng-xun-yun-fu-wu-qi/)
 
 [^2]: [使用Git+Hooks实现Hexo站点自动部署到CentOS服务器上](https://liujunzhou.top/deployer/)
