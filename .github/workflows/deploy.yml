@@ -29,6 +29,11 @@ jobs:
         yarn run hexo clean
         yarn run hexo generate
 
+    - name: Turnstyle
+      uses: softprops/turnstyle@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Upload to OSS
       env:
         OSS_AccessKeyID: ${{ secrets.OSS_AccessKeyID }}
