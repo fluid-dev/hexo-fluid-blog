@@ -20,7 +20,7 @@ excerpt: 在Fliuid主题使用nodePPT。
 
 ## 效果
 
-<iframe src="http://uwrfy5.coding-pages.com/" width="100%" height="600" name="topFrame" scrolling="yes" noresize="noresize" frameborder="0" id="topFrame"></iframe>
+<iframe src="https://pxxyyz.com/nodeppt/%E5%A4%9A%E5%A4%8D%E5%8F%98%E8%BF%91%E6%9C%9F%E8%BF%9B%E5%B1%95/demo.html" width="100%" height="600" name="topFrame" scrolling="yes" noresize="noresize" frameborder="0" id="topFrame"></iframe>
 
 {% note light %}
 **可以通过鼠标和键盘控制**
@@ -212,7 +212,7 @@ Nunjucks Error:  [Line 9418, Column 3465] expected variable end
 
 有一种简单的方法就是用github或者coding等部署nodeppt的html，再iframe的src填对应的网址。如果hexo的`skip_render`设置正确，也可通过网址主页下的nodeppt下找到。
 
-- <https://pxxyyz.com/nodeppt/%E5%A4%9A%E5%A4%8D%E5%8F%98%E8%BF%91%E6%9C%9F%E8%BF%9B%E5%B1%95>
+- <https://pxxyyz.com/nodeppt/%E5%A4%9A%E5%A4%8D%E5%8F%98%E8%BF%91%E6%9C%9F%E8%BF%9B%E5%B1%95/demo.html>
 - <http://uwrfy5.coding-pages.com/>
 
 {% note success %}
