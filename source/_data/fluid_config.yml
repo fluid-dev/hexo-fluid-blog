@@ -41,24 +41,6 @@ fun_features: # 一些好玩的功能
     enable: false
     style: values # 目前设置两个值：values（价值观词汇） | love（爱心）
 
-color:  # 主题颜色配置，不一定能每一处都生效，可能会被局部样式覆盖，这种情况建议用自定义 css 解决。配色可以在这获得启发： https://www.webdesignrankings.com/resources/lolcolors/
-  body_bg_color: "#eee"             # body 背景色
-  navbar_bg_color: "#2f4154"        # 顶部菜单背景色
-  navbar_text_color: "white"        # 顶部菜单字体色
-  text_color: "#3c4858"             # 全局字体色
-  sec_text_color: "#718096"         # 全局次级字体色（摘要、简介等位置）
-  post_text_color: "#2c3e50"        # 文章正文字体色
-  post_heading_color: "#1a202c"     # 文章标题标签字体色（h1 h2 h3...）
-  link_color: "#3c4858"             # 超链接字体色
-  link_hover_color: "#1abc9c"       # 超链接悬浮时字体色
-  link_hover_bg_color: "#ebedef"    # 超链接悬浮背景色
-  board_color: "#fff"               # 主面板背景色
-
-font:  # 主题字体配置
-  font_size: 16px                   # 全局字号
-  font_family:                      # 全局字体
-  code_font_size: 85%               # 代码的字号
-
 custom_js: /js/custom.js  # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js，支持列表
 custom_css:   # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css，支持列表
 custom_html: ''  # 自定义底部 HTML 内容（位于 footer 上方），也可用于外部引入 js css 这些操作，注意不要和 post.custom 配置冲突
@@ -105,6 +87,8 @@ version:  # 版本相关
 #---------------------------
 navbar:
   blog_title:  # 导航栏左侧的标题，为空则按 hexo config.title 显示
+  ground_glass:
+    enalbe: true
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
