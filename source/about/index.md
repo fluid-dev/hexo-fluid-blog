@@ -22,3 +22,13 @@ layout: about
 <p><b>好友申请备注：fluid</b></p>
 <p><b>提问之前请先仔细查阅用户文档</b></p>
 <img width="200" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png" alt="wechat">
+
+## 支持
+
+你可以通过[爱发电](https://afdian.net/@zkqiang)支持我们的开源创作，资金将用于服务器开销以及今后的公共接口服务
+
+<a href="https://afdian.net/@zkqiang">
+  <img width="300" src="https://static.zkqiang.cn/images/20200715113201.png-slim" alt="support me">
+</a>
+
+其他商业赞助可发送邮件至 zkqiang#126.com (#替换为@)
