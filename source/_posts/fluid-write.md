@@ -129,14 +129,35 @@ iframe 页面镶套可以帮助我们更好的展示一个页面。比如以下�
 
 一些参数说明，`width="100%"` 为宽度自适应，高度请根据实际需求跳转，**注意移动端页面是否匹配。** `scrolling` 为滚动条参数。`frameborder` 为边框参数。`noresize` 属性规定用户无法调整框架的大小。
 
+#### details 标签
+
+用于展示代码较多需要折叠或折叠相关内容，以下为演示。`summary` 填写显示名称。
+
+<details>
+<summary>Demo</summary>
+```
+<p><b>好友申请备注：fluid</b></p>
+<p><b>提问之前请先仔细查阅用户文档</b></p>
+<img width="200" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png" alt="wechat">
+```
+</details>
+
+```
+<details>
+<summary>Demo</summary>
+<p><b>好友申请备注：fluid</b></p>
+<p><b>提问之前请先仔细查阅用户文档</b></p>
+<img width="200" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png" alt="wechat">
+</details>
+```
 
 ### 善用 Tag 组件
 
-Fluid 内置了许多 Tag 组件，包含便签、行内标签、勾选框、按钮和组图，可以使用这些组件来丰富文章内容，具体点击查看官方文档查看，**[点击跳转到 Fluid Doc](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)**。
+Fluid 内置了许多 Tag 组件，包含便签、行内标签（已知不会出现间隔，谨慎使用）、勾选框、按钮和组图，可以使用这些组件来丰富文章内容，具体点击查看官方文档查看，**[点击跳转到 Fluid Doc](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)**。
 
 ## 配图
 
-众所周知，**博客好不好看，配图占一半**。这里给大家推荐几个我常用找配图的地方。**另外，请遵循对于网站的版权协议。**
+众所周知，**博客好不好看，配图占一半**。这里给大家推荐几个我常用找配图的地方。**另外，请遵循相关网站的版权协议。**
 
 ### Wallpaper Hub
 ![Wallpaper Hub](https://cdn.vince.pub/blog-file/photo/2020-04-17_175244.png)
@@ -151,4 +172,4 @@ Fluid 内置了许多 Tag 组件，包含便签、行内标签、勾选框、按
 ### Unsplash
 ![Unsplash](https://cdn.vince.pub/blog-file/photo/2020-05-14_000557.png)
 
-**[点击跳转到 Wallhaven](https://unsplash.com/)**
+**[点击跳转到 Unsplash](https://unsplash.com/)**
