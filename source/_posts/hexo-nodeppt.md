@@ -1,5 +1,6 @@
 ---
 title: 给博客文章嵌入 PPT 演示
+author: pxxyyz
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-nodeppt/cover.png?w=480&fmt=webp
 categories: 功能增强
 tags:

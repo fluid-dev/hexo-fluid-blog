@@ -179,6 +179,8 @@ post:  # 部分配置同时控制自定义页面，注意备注
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
+    author:  # 作者
+      enable: true
     date:  # 文章日期
       enable: true
       format: "LL a"  # 格式参照 ISO-8601 日期格式化

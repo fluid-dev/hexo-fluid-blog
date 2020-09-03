@@ -1,5 +1,6 @@
 ---
 title: Hexo 暗黑模式
+author: Royce
 date: 2020-04-23 18:04:57
 index_img: https://rmt.dogedoge.com/fetch/royce/storage/darkmode/cover.png?w=480&fmt=webp
 category: 功能增强

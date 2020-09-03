@@ -1,5 +1,6 @@
 ---
 title: 在 Fluid 主题首页上加入一言
+author: pxxyyz
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/fluid-hitokoto/cover.png?w=480&fmt=webp
 categories: 功能增强
 tags:

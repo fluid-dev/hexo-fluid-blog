@@ -1,5 +1,6 @@
 ---
 title: 给 Hexo 博客添加 PWA 支持
+author: 吃白饭
 date: 2020-04-23 14:21:33
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-pwa/cover.png?w=480&fmt=webp
 category: 功能增强

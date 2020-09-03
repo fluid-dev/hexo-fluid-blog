@@ -1,5 +1,6 @@
 ---
 title: 常见静态网站托管平台使用及多节点部署方案
+author: Vince
 date: 2020-05-27 15:00:00
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-static/cover.jpg?w=480&fmt=webp
 category: 实用技巧

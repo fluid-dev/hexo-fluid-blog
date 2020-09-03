@@ -1,5 +1,6 @@
 ---
 title: 使用 ECharts 插件绘制炫酷图表
+author: pxxyyz
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-echarts/cover.png?w=480&fmt=webp
 categories: 功能增强
 tags:

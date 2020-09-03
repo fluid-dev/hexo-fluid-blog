@@ -1,5 +1,6 @@
 ---
 title: 使用 Rainbow 展示随机的英语句子
+author: 吃白饭
 date: 2020-05-08 17:12:56
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-rainbow/rainbow.jpg?w=480&fmt=webp
 category: 功能增强

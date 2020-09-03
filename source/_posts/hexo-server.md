@@ -1,5 +1,6 @@
 ---
 title: Hexo 云服务备份与使用 Jupyter 
+author: pxxyyz
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-server/hexo-server.png?w=480&fmt=webp
 category: 实用技巧
 tags:
