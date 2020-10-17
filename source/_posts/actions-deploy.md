@@ -1,5 +1,6 @@
 ---
 title: 利用 GitHub Actions 自动部署 Hexo 博客
+author: 张凯强
 date: 2020-05-23 19:00:00
 index_img: https://rmt.dogedoge.com/fetch/fluid/storage/actions-deploy/cover.png?w=480&fmt=webp
 category: 实用技巧
@@ -7,11 +8,12 @@ tags:
   - 部署
   - 示例
   - Hexo
+excerpt: 将 GitHub Actions 应用于 Hexo 部署中，让你不再为部署浪费时间。
 ---
 
 ## 前言
 
-本文主要讲如何应用于 Hexo 部署中，如果还不太熟悉 GitHub Actions 可以看[这篇文章](https://zkqiang.cn/posts/e8ed6836/)，简单地说 Actions 就是在设定的时机触发创建一个虚拟云环境，然后执行一连串动作，从而实现自动部署的功能。
+本文主要讲如何将 GitHub Actions 应用于 Hexo 部署中，如果还不太熟悉 GitHub Actions 可以看[这篇文章](https://zkqiang.cn/posts/e8ed6836/)，简单地说 Actions 就是在设定的时机触发创建一个虚拟云环境，然后执行一连串动作，从而实现自动部署的功能。
 
 ## 创建工作流
 
