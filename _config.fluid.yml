@@ -37,9 +37,14 @@ fun_features: # 一些好玩的功能
     placement: right # icon放置的位置： left | right
     visible: hover # 默认悬浮显示，可选：hover（鼠标在元素上悬浮时显示） | always（一直显示） | touch（移动端触摸显示）
     icon: "" # 可选：§ | # | ❡ 等，留空则为默认效果
-  mouse_click:  # 鼠标点击动效
-    enable: false
-    style: values # 目前设置两个值：values（价值观词汇） | love（爱心）
+  progressbar:  # 加载进度条
+    enable: true
+    heightPx: 3
+    color: "#29d"
+    options: { showSpinner: false }  # 参数详见 https://github.com/rstacruz/nprogress
+
+pjax:  # 实验性功能，可能与某些功能冲突
+  enable: true
 
 custom_js: /js/custom.js  # 指定自定义 js 文件路径，路径是相对 source 目录，如 /js/custom.js，支持列表
 custom_css:   # 指定自定义 css 文件路径，路径是相对 source 目录，如 /css/custom.css，支持列表
@@ -64,20 +69,6 @@ lazyload: # 对页面中的图片进行懒加载处理，可见范围外的图�
   enable: true
   onlypost: false  # 仅在文章页使用懒加载，开启后如果自定义页面需要使用，可以在 Front-matter 里指定 `lazyload: true`
 
-daovoice:  # 在线客服 Daovoice 参考：http://dashboard.daovoice.io
-  enable: false # 是否开启在线客服聊天
-  appid: ''  # 应用ID设置
-
-aplayer:  # 音乐播放器，注意不能与 hexo-tag-aplayer 插件共用
-  enable: false
-  autoplay: false  # 音频自动播放
-  loop: 'all'  # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'random'  # 播放顺序，可选值: 'list', 'random'
-  theme: '#b7daff'  # 主题色
-  songs:  # 歌曲列表，必须传入下列各参数，其中 url 与 cover 在本地需存于 source 目录，更多参数见文档：https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0
-    - { name: 'name', artist: 'artist', url: '/songs/test.mp3', cover: '/img/cover.jpg' }
-    - { name: 'name', artist: 'artist', url: 'https://...url.mp3', cover: 'https://...cover.jpg' }
-
 version:  # 版本相关
   check: false  # 每次生成检测是否为最新版本
 
@@ -97,14 +88,14 @@ navbar:
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
     - {
-        key: '文档',
-        icon: 'iconfont icon-books',
-        link: '#',
-        submenu: [
-          { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/guide/' },
-          { key: '操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' },
-          { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/icon/' }
-        ]
+      key: '文档',
+      icon: 'iconfont icon-books',
+      link: '#',
+      submenu: [
+      { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/guide/' },
+      { key: '操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' },
+      { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/icon/' }
+      ]
     }
 
 search: # 搜索栏
@@ -202,7 +193,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
   toc:  # 文章右侧目录
     enable: true
     headingSelector: h1,h2,h3,h4,h5,h6
-    collapseDepth: 0  # 层级的折叠深度，0 是全部折叠，6 是全部不折叠
+    collapseDepth: 3  # 层级的折叠深度，0 是全部折叠，6 是全部不折叠
   copyright:  # 版权声明
     enable: true
     content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！'
@@ -370,6 +361,12 @@ links:
   subtitle:  # 打字机内容
   items:  # intro 与 image 可省略
     - {
+      title: 'Fluid Blog',
+      intro: '主题博客',
+      link: 'https://hexo.fluid-dev.com/',
+      image: '/img/favicon.png'
+    }
+    - {
       title: 'Fluid Docs',
       intro: '主题使用指南',
       link: 'https://hexo.fluid-dev.com/docs/',
@@ -379,11 +376,5 @@ links:
       title: 'Fluid Repo',
       intro: '主题 GitHub 仓库',
       link: 'https://github.com/fluid-dev/hexo-theme-fluid',
-      image: '/img/favicon.png'
-    }
-    - {
-      title: 'Fluid Example',
-      intro: '主题操作示例',
-      link: 'https://hexo.fluid-dev.com/docs/example/',
       image: '/img/favicon.png'
     }
