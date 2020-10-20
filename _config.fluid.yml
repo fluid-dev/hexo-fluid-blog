@@ -92,9 +92,9 @@ navbar:
       icon: 'iconfont icon-books',
       link: '#',
       submenu: [
-      { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/guide/' },
-      { key: '操作示例', link: 'https://hexo.fluid-dev.com/docs/example/' },
-      { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/icon/' }
+      { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/zh/guide/' },
+      { key: '操作示例', link: 'https://hexo.fluid-dev.com/docs/zh/example/' },
+      { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/zh/icon/' }
       ]
     }
 

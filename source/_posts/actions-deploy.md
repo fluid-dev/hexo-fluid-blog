@@ -133,7 +133,7 @@ ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
 
 ### 服务器
 
-如果是直接部署在服务器上，需要通过 FTP/SFTP 协议来完成上传操作，因此确保你的服务器开启了 FTP 服务。
+如果是直接部署在服务器上，需要通过 FTP/SFTP 协议来完成上传操作，因此确保你的服务器开启了 FTP 服务。如果使用 FTP-Deploy-Action 的话，需要注意的是因为 `./public` 是在流程中生成的文件，需要添加  `.git-ftp-include` 文件后方可推送，具体请查看相关 [README](https://github.com/SamKirkland/FTP-Deploy-Action#build-and-publish-reactangularvue-website/) 中的相关内容。
 
 ```yaml
 - name: Deploy to Server

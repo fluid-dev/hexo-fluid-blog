@@ -15,7 +15,7 @@ excerpt: Fluid 是一款很优雅的主题，主要介绍从使用主题拓展�
 本文由 Fluid 用户授权转载，版权归原作者所有。
 
 本文作者：Vince
-原文地址：https://i.vince.pub/posts/14677127/
+原文地址：https://i.vince.pub/p/fluid-write/
 {% endnote %}
 
 ## 前言

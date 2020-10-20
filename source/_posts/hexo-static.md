@@ -15,7 +15,7 @@ excerpt: 择一个合适的托管平台对于博客来说十分重要，可以�
 本文由 Fluid 用户授权转载，版权归原作者所有。
 
 本文作者：Vince
-原文地址：https://i.vince.pub/posts/2fc062cb/
+原文地址：https://i.vince.pub/p/hexo-static/
 {% endnote %}
 
 ## 前言
