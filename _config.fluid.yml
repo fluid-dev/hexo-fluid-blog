@@ -92,9 +92,9 @@ navbar:
       icon: 'iconfont icon-books',
       link: '#',
       submenu: [
-      { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/zh/guide/' },
-      { key: '操作示例', link: 'https://hexo.fluid-dev.com/docs/zh/example/' },
-      { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/zh/icon/' }
+      { key: '安装主题', link: 'https://hexo.fluid-dev.com/docs/start/' },
+      { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/guide/' },
+      { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/icon/' }
       ]
     }
 
@@ -344,6 +344,7 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
 # 404 Page
 #---------------------------
 page404:
+  enable: false
   banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/g8xjqe.png?w=1920&fmt=webp
   banner_img_height: 85  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
@@ -361,9 +362,9 @@ links:
   subtitle:  # 打字机内容
   items:  # intro 与 image 可省略
     - {
-      title: 'Fluid Blog',
-      intro: '主题博客',
-      link: 'https://hexo.fluid-dev.com/',
+      title: 'Install Fluid',
+      intro: '安装主题',
+      link: 'https://hexo.fluid-dev.com/start/',
       image: '/img/favicon.png'
     }
     - {
