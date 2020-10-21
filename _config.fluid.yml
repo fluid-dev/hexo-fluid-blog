@@ -344,6 +344,7 @@ about:  # 以下仅为页面顶部的基本信息，更多内容请在 ./pages/a
 # 404 Page
 #---------------------------
 page404:
+  enable: false
   banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/g8xjqe.png?w=1920&fmt=webp
   banner_img_height: 85  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
