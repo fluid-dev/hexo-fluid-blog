@@ -160,7 +160,7 @@ Class08 <--> C2: Cool label
 
 ### 便签
 
-{% note primary %}
+{% note info %}
 这里可以写文字 或者 `markdown`
 {% endnote %}
 
@@ -168,13 +168,13 @@ Class08 <--> C2: Cool label
 这里可以写文字 或者 `markdown`
 {% endnote %}
 
-{% note danger %}
+{% note primary %}
 这里可以写文字 或者 `markdown`
 {% endnote %}
 
 ### 行内标签
 
-{% label primary @行内标签 %} {% label warning @行内标签 %} {% label danger @行内标签 %}
+{% label info @行内标签 %} {% label warning @行内标签 %} {% label primary @行内标签 %}
 
 ### 勾选框
 
