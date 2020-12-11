@@ -130,3 +130,36 @@ hexo.extend.injector.register('body_end', `
   daovoice('update');
 })();
 ```
+
+### 文章时效性提示
+
+技术性文章往往存在时效性的问题，比如某些文章会介绍一些临时解决方案，但随着时间推移可能已经失效了。我们可以通过判断发布时间（即文章设置的 `date`）与当前时间的间隔，来为文章开头插入一条提示。
+
+代码效果如下所示：
+
+<div class="note note-warning" style="font-size:0.9rem">
+  <p></p>
+  <div class="h6">文章时效性提示</div>
+  <p>这是一篇发布于 263 天前的文章，部分信息可能已发生改变，请注意甄别。</p>
+  <p></p>
+</div>
+
+```javascript
+(function() {
+  var times = document.getElementsByTagName('time');
+  if (times.length === 0) { return; }
+  var posts = document.getElementsByClassName('post-content');
+  if (posts.length === 0) { return; }
+
+  var pubTime = new Date(times[0].dateTime);  /* 文章发布时间戳 */
+  var now = Date.now()  /* 当前时间戳 */
+  var interval = parseInt(now - pubTime)
+  /* 发布时间超过指定时间（毫秒） */
+  if (interval > 3600*24*30*1000){
+    var days = parseInt(interval / 86400000)
+    posts[0].innerHTML = '<div class="note note-warning" style="font-size:0.9rem"><p>' +
+      '<div class="h6">文章时效性提示</div><p>这是一篇发布于 ' + days + ' 天前的文章，部分信息可能已发生改变，请注意甄别。' +
+      '</p></p></div>' + posts[0].innerHTML;
+  }
+})();
+```
