@@ -350,7 +350,7 @@ links:
     - {
       title: 'Install Fluid',
       intro: '安装主题',
-      link: 'https://hexo.fluid-dev.com/start/',
+      link: 'https://hexo.fluid-dev.com/docs/start/',
       image: '/img/favicon.png'
     }
     - {
