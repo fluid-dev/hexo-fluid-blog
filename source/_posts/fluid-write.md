@@ -161,16 +161,16 @@ Fluid 内置了许多 Tag 组件，包含便签、行内标签（已知不会出
 众所周知，**博客好不好看，配图占一半**。这里给大家推荐几个我常用找配图的地方。**另外，请遵循相关网站的版权协议。**
 
 ### Wallpaper Hub
-![Wallpaper Hub](https://cdn.vince.pub/blog-file/photo/2020-04-17_175244.png)
+![Wallpaper Hub](https://cdn.jsdelivr.net/gh/vinceying/static@main/images/blog_fluid/2020-04-17_175244.png)
 
 **[点击跳转到 Wallpaper Hub](https://wallpaperhub.app/)**
 
 ### Wallhaven
-![Wallhaven](https://cdn.vince.pub/blog-file/photo/2020-04-17_174841.png)
+![Wallhaven](https://cdn.jsdelivr.net/gh/vinceying/static@main/images/blog_fluid/2020-04-17_174841.png)
 
 **[点击跳转到 Wallhaven](https://wallhaven.cc/)**
 
 ### Unsplash
-![Unsplash](https://cdn.vince.pub/blog-file/photo/2020-05-14_000557.png)
+![Unsplash](https://cdn.jsdelivr.net/gh/vinceying/static@main/images/blog_fluid/2020-05-14_000557.png)
 
 **[点击跳转到 Unsplash](https://unsplash.com/)**

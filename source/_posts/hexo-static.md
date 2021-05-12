@@ -24,7 +24,7 @@ excerpt: 择一个合适的托管平台对于博客来说十分重要，可以�
 
 ## 常见托管平台
 
-![节点](https://cdn.vince.pub/blog-file/photo/2fc062cb2.svg)
+![节点](https://cdn.jsdelivr.net/gh/vinceying/static@main/images/blog_fluid/static_list.svg)
 
 ### Github Pages
 
