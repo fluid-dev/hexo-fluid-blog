@@ -24,7 +24,7 @@ jobs:
     - name: Hexo Generate
       run: |
         rm -f .yarnclean
-        yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
+        yarn --no-lockfile --non-interactive --silent
         rm -rf ./public
         yarn run hexo clean
         yarn run hexo generate
@@ -39,7 +39,7 @@ jobs:
         OSS_AccessKeyID: ${{ secrets.OSS_AccessKeyID }}
         OSS_AccessKeySecret: ${{ secrets.OSS_AccessKeySecret }}
       run: |
-        wget -q http://gosspublic.alicdn.com/ossutil/1.6.10/ossutil64
+        wget -q https://gosspublic.alicdn.com/ossutil/1.7.3/ossutil64
         chmod +x ./ossutil64
         ./ossutil64 config -e oss-ap-southeast-1.aliyuncs.com -i $OSS_AccessKeyID -k $OSS_AccessKeySecret -L CH
         ./ossutil64 cp -r -f oss://fluid-dev/docs ./public/
