@@ -25,10 +25,8 @@ layout: about
 
 ## 支持
 
-你可以通过[爱发电](https://afdian.net/@zkqiang)支持我们的开源创作，资金将用于服务器开销以及今后的公共接口服务
+你可以扫描下方微信赞赏码支持我们的开源创作，资金将用于服务器及域名开销以及今后的公共接口服务。
 
-<a href="https://afdian.net/@zkqiang">
-  <img width="300" src="https://static.zkqiang.cn/images/20200715113201.png-slim" alt="support me">
-</a>
+<img src="https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/sponsor.png?s=200&v=4" width="200" alt="爱发电">
 
-其他商业赞助可发送邮件至 zkqiang#126.com (#替换为@)
+同时我们正在寻找商业赞助商，如果贵司想在本页展示广告位（每月 6K+ Views 定向流量曝光），或者有其他赞助形式，可将联系方式发送邮件至 zkqiang#126.com (#替换为@)。
