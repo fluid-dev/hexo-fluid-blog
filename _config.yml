@@ -106,6 +106,6 @@ baidusitemap:
 
 memorial_day:
   # Better to close it when it is not used
-  enable: true
+  enable: false
   # Specified date will be greyed
   day: 12-13

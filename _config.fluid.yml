@@ -18,11 +18,11 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: /img/favicon.png
+favicon: /img/fluid.png
 
 # 用于苹果设备的图标
 # Icon for Apple touch
-apple_touch_icon: /img/favicon.png
+apple_touch_icon: /img/fluid.png
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
@@ -133,11 +133,6 @@ footer:
     # Options: busuanzi | leancloud
     source: "leancloud"
 
-    # 页面显示的文本，{}是数字的占位符（必须包含)，下同
-    # Displayed text, {} is a placeholder for numbers (must be included), the same below
-    pv_format: "总访问量 {} 次"
-    uv_format: "总访客数 {} 人"
-
 
 #---------------------------
 # 首页
@@ -169,7 +164,7 @@ post:
     # 作者，优先根据 front-matter 里 author 字段，其次是 hexo 配置中 author 值
     # Author, based on `author` field in front-matter, if not set, based on `author` value in hexo config
     author:
-      enable: true
+      enable: false
 
     # 文章日期，优先根据 front-matter 里 date 字段，其次是 md 文件日期
     # Post date, based on `date` field in front-matter, if not set, based on create date of .md file
@@ -184,34 +179,137 @@ post:
     # Word count
     wordcount:
       enable: true
-      # 显示的文本，{}是数字的占位符（必须包含)，下同
-      # Displayed text, {} is a placeholder for numbers (must be included), the same below
-      format: "{} 字"
 
     # 估计阅读全文需要的时长
-    # Estimate the time required to read the full text
+    # Estimated reading time
     min2read:
       enable: true
-      format: "{} 分钟"
-      # 每分钟阅读多少字，如果是技术文章，建议降低
-      # Words read per minute
-      words: 100
+      # 每个字词的长度，建议：中文≈2，英文≈5，中英混合可自行调节
+      # Average word length (chars count in word), ZH ≈ 2, EN ≈ 5
+      awl: 2
+      # 每分钟阅读字数，如果大部分是技术文章可适度调低
+      # Words per minute
+      wpm: 60
 
     # 浏览量计数
     # Number of visits
     views:
-      enable: true
+      enable: false
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
       source: "leancloud"
-      format: "{} 次"
 
-  # 版权声明
-  # Copyright
+  # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
+  # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
+  updated:
+    enable: false
+
+    # 格式参照 ISO-8601 日期格式化
+    # ISO-8601 date format
+    # See: http://momentjs.cn/docs/#/parsing/string-format/
+    date_format: "LL a"
+
+    # 是否使用相对时间表示，比如："3 天前"
+    # If true, it will be a relative time, such as: "3 days ago"
+    relative: false
+
+    # 提示标签类型
+    # Note class
+    # Options: default | primary | info | success | warning | danger | light
+    note_class: info
+
+  # 侧边栏展示当前分类下的文章
+  # Sidebar of category
+  category_bar:
+    enable: true
+
+    # 开启后，只有在文章 Front-matter 里指定 `category_bar: true` 才会展示分类，也可以通过 `category_bar: ["分类A"]` 来指定分类
+    # If true, only set `category_bar: true` in Front-matter will enable sidebar of category, also set `category_bar: ["CategoryA"]` to specify categories
+    specific: true
+
+    # 置于板块的左侧或右侧
+    # place in the board
+    # Options: left | right
+    placement: left
+
+    # 文章的排序字段，前面带减号是倒序，不带减号是正序
+    # Sort field for posts, with a minus sign is reverse order
+    # Options: date | title | or other field of front-matter
+    post_order_by: "title"
+
+    # 单个分类中折叠展示文章数的最大值，超过限制会显示 More，0 则不限制
+    # The maximum number of posts in a single category. If the limit is exceeded, it will be displayed More. If 0 no limit
+    post_limit: 0
+
+  # 侧边栏展示文章目录
+  # Table of contents (TOC) in the sidebar
+  toc:
+    enable: true
+
+    # 置于板块的左侧或右侧
+    # place in the board
+    # Options: left | right
+    placement: right
+
+    # 目录会选择这些节点作为标题
+    # TOC will select these nodes as headings
+    headingSelector: "h1,h2,h3,h4,h5,h6"
+
+    # 层级的折叠深度，0 是全部折叠，大于 0 后如果存在下级标题则默认展开
+    # Collapse depth. If 0, all headings collapsed. If greater than 0, it will be expanded by default if there are sub headings
+    collapseDepth: 0
+
+  # 版权声明，会显示在每篇文章的结尾
+  # Copyright, will be displayed at the end of each post
   copyright:
     enable: true
-    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！'
+
+    # CC license
+    # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
+    license: 'BY-SA'
+
+    # 显示作者
+    author:
+      enable: true
+
+    # 显示发布日期
+    # Show post date
+    post_date:
+      enable: true
+      format: "LL"
+
+    # 显示更新日期
+    # Show update date
+    update_date:
+      enable: false
+      format: "LL"
+
+  # 文章底部上一篇下一篇功能
+  # Link to previous/next post
+  prev_next:
+    enable: true
+
+  # 文章图片标题
+  # Image caption
+  image_caption:
+    enable: true
+
+  # 文章图片可点击放大
+  # Zoom feature of images
+  image_zoom:
+    enable: true
+    # 放大后图片链接替换规则，可用于将压缩图片链接替换为原图片链接，如 ['-slim', ''] 是将链接中 `-slim` 移除；如果想使用正则请使用 `re:` 前缀，如 ['re:\\d{3,4}\\/\\d{3,4}\\/', '']
+    # The image url replacement when zooming, the feature can be used to replace the compressed image to the original image, eg: ['-slim', ''] removes `-slim` from the image url when zooming; if you want to use regular, use prefix `re:`, eg: ['re:\\d{3,4}\\/\\d{3,4}\\/','']
+    img_url_replace: ['', '']
+
+  # 脚注语法，会在文章底部生成脚注，如果 Markdown 渲染器本身支持，则建议关闭，否则可能会冲突
+  # Support footnote syntax, footnotes will be generated at the bottom of the post page. If the Markdown renderer itself supports it, please disable it, otherwise it may conflict
+  footnote:
+    enable: true
+    # 脚注的节标题，也可以在 front-matter 中通过 `footnote: <h2>Reference</h2>` 这种形式修改单独页面的 header
+    # The section title of the footnote, you can also modify the header of a single page in the form of `footnote: <h2>Reference</h2>` in front-matter
+    header: ''
 
   # 数学公式，开启之前需要更换 Markdown 渲染器，否则复杂公式会有兼容问题，具体请见：https://hexo.fluid-dev.com/docs/guide/##latex-数学公式
   # Mathematical formula. If enable, you need to change the Markdown renderer, see: https://hexo.fluid-dev.com/docs/en/guide/#math
@@ -227,8 +325,8 @@ post:
     # Options: mathjax | katex
     engine: mathjax
 
-  # 流程图，基于 mermaid-js
-  # Flow chart, based on mermaid-js
+  # 流程图，基于 mermaid-js，具体请见：https://hexo.fluid-dev.com/docs/guide/#mermaid-流程图
+  # Flow chart, based on mermaid-js, see: https://hexo.fluid-dev.com/docs/en/guide/#mermaid
   mermaid:
     # 开启后文章默认可用，自定义页面如需使用，需在 Front-matter 中指定 `mermaid: true`
     # If you want to use mermaid on the custom page, you need to set `mermaid: true` in Front-matter
