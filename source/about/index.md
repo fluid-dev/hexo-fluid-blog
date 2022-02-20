@@ -29,4 +29,4 @@ layout: about
 
 <img src="https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/sponsor.png?raw=true" width="200" alt="微信赞赏码">
 
-同时我们正在寻找商业赞助商，如果贵司想在本页展示广告位（每月 6K+ Views 定向流量曝光），或者有其他赞助形式，可将联系方式发送邮件至 zkqiang#126.com (#替换为@)。
+同时我们正在寻找商业赞助商，如果贵司想在 Fluid 项目的 README 展示广告位（每月 6K+ Views 定向流量曝光），或者有其他赞助形式，可将联系方式发送邮件至 zkqiang#126.com (#替换为@)。
