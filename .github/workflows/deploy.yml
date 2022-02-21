@@ -21,13 +21,17 @@ jobs:
       with:
         node-version: "12.x"
 
+    - name: Install NodeModules
+      run: |
+        rm -f .yarnclean yarn.lock
+        yarn --non-interactive --silent
+        yarn list --depth=0
+
     - name: Install Pandoc
       run: sudo apt-get install -y pandoc
 
     - name: Hexo Generate
       run: |
-        rm -f .yarnclean
-        yarn --no-lockfile --non-interactive --silent
         rm -rf ./public
         yarn run hexo clean
         yarn run hexo generate
