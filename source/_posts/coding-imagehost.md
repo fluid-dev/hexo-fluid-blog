@@ -13,7 +13,7 @@ excerpt: 通过 Coding 持续集成同步 GitHub 仓库，实现自建图床功�
 本文由 Fluid 用户授权转载，版权归原作者所有。
 
 本文作者：千泷
-原文地址：<https://www.myql.xyz/post/b46d7a52/>
+原文地址：<https://www.myql.xyz/post/92e90c46/>
 {% endnote %}
 
 现在绝大多数自建博客用的图床方案都是 GitHub + jsDelivr + PicGo，包括作者的站点也是一样，优点在于零成本，简单的搭建方式以及不错的访问速度，但随着 jsDelivr 备案被取消，国内访问不再稳定，我开始考虑更好的代替品。

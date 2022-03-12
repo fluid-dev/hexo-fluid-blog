@@ -15,7 +15,7 @@ excerpt: 大概花了一个晚上给 Fluid 搞了暗黑模式，之后陆续优�
 本文由 Fluid 用户授权转载，版权归原作者所有。
 
 本文作者：Royce
-原文地址：https://royce2003.top/posts/41212.html
+原文地址：<https://royce2003.top/posts/41212.html>
 {% endnote %}
 
 {% note warning %}

@@ -15,7 +15,7 @@ excerpt: PWA（Progressive Web App）的中文名叫做「渐进式网页应用�
 本文由 Fluid 用户授权转载，版权归原作者所有。
 
 本文作者：吃白饭  
-原文地址：https://eatrice.top/post/给hexo博客添加PWA支持/
+原文地址：<https://eatrice.top/post/给hexo博客添加PWA支持/>
 {% endnote %}
 
 ## 简介

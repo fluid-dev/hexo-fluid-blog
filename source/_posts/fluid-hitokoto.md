@@ -16,7 +16,7 @@ excerpt: 介绍如何改造在首页 Slogan 上显示一言(hitokoto)
 
 本文作者：pxxyyz
 
-原文地址：https://pxxyyz.com/posts/30454/
+原文地址：<https://pxxyyz.com/posts/30454/>
 {% endnote %}
 
 群里有个小哥想在首页 Slogan 上显示一言，在 GitHub 上搜了搜，还真有 Fluid 主题的改造，我按照思路写下改造的步骤。

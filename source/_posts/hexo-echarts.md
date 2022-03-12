@@ -16,7 +16,7 @@ excerpt: ECharts 是一个使用 JavaScript 实现的开源可视化库，涵盖
 
 本文作者：pxxyyz
 
-原文地址：https://pxxyyz.com/posts/15698/
+原文地址：<https://pxxyyz.com/posts/15698/>
 {% endnote %}
 
 ## ECharts使用
