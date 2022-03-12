@@ -107,3 +107,7 @@ memorial_day:
   enable: false
   # Specified date will be greyed
   day: 12-13
+
+pandoc:
+  extensions:
+    - "+hard_line_breaks"
