@@ -101,8 +101,6 @@ nofollow:
 
 sitemap:
   path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
 
 memorial_day:
   # Better to close it when it is not used
