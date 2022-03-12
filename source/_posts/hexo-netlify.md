@@ -15,7 +15,7 @@ excerpt: "通过 Netlify CMS 实现在线编辑文章和修改主题配置"
 本文由 Fluid 用户授权转载，版权归原作者所有。
 
 本文作者：千泷
-原文地址：https://www.myql.xyz/post/8f487fbb/
+原文地址：<https://www.myql.xyz/post/e00ab0f6/>
 {% endnote %}
 
 ## ✨前言
@@ -39,37 +39,41 @@ excerpt: "通过 Netlify CMS 实现在线编辑文章和修改主题配置"
 
 配置完的界面
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210420211303684.png)
+![image-20210420211303684](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210420211303684.png)
 
 在线对文章进行编辑，修改
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418222435713.png)
+![image-20210418222435713](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418222435713.png)
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418222455291.png)
+![image-20210418222455291](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418222455291.png)
 
 工作流
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210420212403763.png)
+![image-20210420212403763](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210420212403763.png)
 
 对媒体资源的管理
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210420212801157.png)
+![image-20210420212801157](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210420212801157.png)
 
 对其他页面的修改
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210420213123997.png)
+![image-20210420213123997](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210420213123997.png)
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210420213142628.png)
+![image-20210420213142628](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210420213142628.png)
 
 在线修改博客首页、文章页、归档页等页面的顶部图
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210420214308165.png)
+![image-20210420214308165](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210420214308165.png)
 
 在线添加、编辑友链页面
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418223337304.png)
+![image-20210418223337304](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418223337304.png)
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418223354013.png)
+![image-20210418223354013](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418223354013.png)
+
+### 🔗在线演示
+
+为了更加直观，做了一个已经配置完毕的博客，你可以在线体验上述功能 👉[点我查看](https://qwqmiao.cf/admin/)
 
 ## 📃简单说明
 
@@ -88,27 +92,34 @@ excerpt: "通过 Netlify CMS 实现在线编辑文章和修改主题配置"
 
 在部署完成后，你需要开启 `Identity`
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418225044656.png)
+![image-20210418225044656](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418225044656.png)
 
 进入设置中
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418225125358.png)
+![image-20210418225125358](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418225125358.png)
 
 将 `Registration preferences` 修改为 `Invite only` 此项为是否开启注册，默认是开启注册。修改为 `Invite only` 后表示仅受邀请的用户可以注册，当然此项你可以在自己注册完毕之后再行修改。
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418225239607.png)
+![image-20210418225239607](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418225239607.png)
 
 下滑找到 `Git Gateway` 并开启。
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418225726557.png)
+![image-20210418225726557](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418225726557.png)
 
 至此准备工作完成
 
 ### 🎨修改博客配置
 
-在博客 `source` 文件夹中，创建 `admin` 文件夹，并新建两个文件 `index.html` 和 `config.yml` 
+> 在博客根目录中找到`_config.yml`并修改，这一步是跳过文件夹渲染，不然后面会出错
+>
+> ```yml
+> skip_render: admin/*
+> ```
+>
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210418230338242.png)
+在博客`source`文件夹中，创建`admin`文件夹，并新建两个文件`index.html`和`config.yml`
+
+![image-20210418230338242](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210418230338242.png)
 
 在 `index.html` 中添加以下内容
 
@@ -121,6 +132,7 @@ excerpt: "通过 Netlify CMS 实现在线编辑文章和修改主题配置"
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="x-UA-Compatible" content="IE=Edge">
         <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <title>魔王の领地</title>
     </head>
     
@@ -286,9 +298,9 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
 
 请注意，这里我对 [Fluid 主题](https://github.com/fluid-dev/hexo-theme-fluid)进行了配置，例如`banner_img`、`index_img`等项目，不能正常使用请删除，如果你不是 [Fluid 主题](https://github.com/fluid-dev/hexo-theme-fluid)请根据实际情况对`source\admin\config.yml`配置进行修改，如果你和我一样是 [Fluid 主题](https://github.com/fluid-dev/hexo-theme-fluid)，还需要将主题配置文件（`/_config.fluid.yml`）中的相对应的字段及其内容一并注释掉才能使其生效，类似于这样
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210420221125705.png)
+![image-20210420221125705](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210420221125705.png)
 
-![](https://gitee.com/leicancun/cdn/raw/master/Netlify-cms/image-20210419015951835.png)
+![image-20210419015951835](https://myql.coding.net/p/owo/d/img/git/raw/main/posts/image-20210419015951835.png)
 
 并且创建`source\_data\fluid_config.yml`，将相关配置复制粘贴到里面（请根据此配置去主题配置文件中注释掉相对应的字段）
 
@@ -296,26 +308,26 @@ collections:      # https://www.netlifycms.org/docs/configuration-options/#colle
 <summary>点击展开配置内容</summary>
 ```yaml
 index:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/background.webp
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/img@main/images/background.webp
   banner_img_height: 100
 post:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@master/images/mmexport1602581319886.webp
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/img@main/banner_img/mmexport1602581319886.webp
   banner_img_height: 70
-  default_index_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-g8wvm7.webp
+  default_index_img: https://cdn.jsdelivr.net/gh/leicancun/img@main/banner_img/wallhaven-g8wvm7.webp
 archive:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421595370-wallhaven-q6ov7d.jpg
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/img@main/banner_img/wallhaven-q6ov7d.webp
   banner_img_height: 80
 category:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421818281-wallhaven-zm93dj.jpg
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/img@main/banner_img/wallhaven-zm93dj.webp
   banner_img_height: 80
 tag:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421669417-wallhaven-1kkm2g.jpg
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/img@main/banner_img/wallhaven-1kkm2g.webp
   banner_img_height: 80
 about:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/wallhaven-pkkr2.webp
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/img@main/banner_img/wallhaven-pkkr2.webp
   banner_img_height: 80
 links:
-  banner_img: https://cdn.jsdelivr.net/gh/leicancun/JSCDN@main/images/1616421416500-wallhaven-rddv31.jpg
+  banner_img: https://cdn.jsdelivr.net/gh/leicancun/img@main/banner_img/wallhaven-rddv31.webp
   banner_img_height: 80
   items:
     - title: 小丁的个人博客
@@ -343,6 +355,7 @@ links:
       link: https://logi.im
       avatar: https://code.bdstatic.com/npm/logicdn@1.0.0/logi.im/usr/images/global/logo.webp
 ```
+
 </details>
 
 请保持这样的格式，当然如果你对`yml`语法非常了解也可以自行修改🤣
@@ -365,6 +378,19 @@ links:
 
 至此 [Netlify CMS](https://www.netlifycms.org/) 配置就算完成了，只要推送代码，等待片刻，通过你部署在 [Netlify](https://www.netlify.com/) 上的域名，加 `/admin/` 即可访问你的博客后台。
 
-## 😁感谢
+## 🚀 一键部署
+
+如果你感觉有点繁琐，或者怕配置出错可以直接使用我配置好的`一键部署`来快速搭建你的博客👉[点击前往](https://github.com/leicancun/hexo-blog-netlify)
+
+ps: 即使是一键部署也不要忘记`准备工作`里的步骤，这很重要
+
+## 😕 改进计划
+
+~~因为对 css 不太熟悉，并没有设置页面自适应，导致现在编辑页面的预览体验很差，在手机上显示也不甚理想，等我多熟悉熟悉 css 然后弄一下自适应。~~
+
+目前对图片并没有自适应，在手机上显示的效果也不算好，因为能力有限折腾了很久没弄明白，官方文档在这里👉[点我查看](https://www.netlifycms.org/docs/customization/)
+如果能有大佬能帮助我就更好了，十分欢迎各位大佬
+
+## 😁 感谢
 
 十分感谢 [zkqiang](https://github.com/zkqiang) 大佬对我的耐心帮助🎉🎉🎉
