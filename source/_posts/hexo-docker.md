@@ -1,7 +1,7 @@
 ---
 title: Hexo 使用 Docker 来写文章和调试博客 
-author: Royce
-date: 2020-04-23 18:04:57
+author: 夜法之书
+date: 2022-10-10 18:04:57
 index_img: https://blog.17lai.site/medias_webp/cover/hexo.webp
 category: 实用技巧
 tags:
@@ -55,7 +55,7 @@ bloodstar/hexo
 
 ### hexo web 后台写作
 
-> 基于 **[hexo-admin](https://github.com/jaredly/hexo-admin)** 实现，具体配置实现方法见[后文](/posts/40300608/)。
+> 基于 **[hexo-admin](https://github.com/jaredly/hexo-admin)** 实现，具体配置实现方法见[后文](https://blog.17lai.site/posts/40300608/)。
 >
 > 最终效果如下图所示。` blog.17lai.fun` 访问`blog`， 添加后缀 `admin` 访问 `hexo` 后台。
 >
