@@ -180,3 +180,20 @@ excerpt: Vercel使用有不少需要仔细配置的地方，可惜的是，自�
 ## 参考&致谢
 
 - <https://vercel.com/docs/project-configuration#project-configuration/redirects>
+
+## 系列教程
+
+- [Hexo Docker环境与Hexo基础配置篇](https://blog.17lai.site/posts/40300608/)
+- [hexo博客自定义修改篇](https://blog.17lai.site/posts/4d8a0b22/)
+- [hexo博客网络优化篇](https://blog.17lai.site/posts/9b056c86/)
+- [hexo博客增强部署篇](https://blog.17lai.site/posts/5311b619/)
+- [hexo博客个性定制篇](https://blog.17lai.site/posts/4a2050e2/)
+- [hexo博客常见问题篇](https://blog.17lai.site/posts/84b4059a/)
+- [hexo博客博文撰写篇之完美笔记大攻略终极完全版](https://blog.17lai.site/posts/253706ff/)
+- [Hexo Markdown以及各种插件功能测试](https://blog.17lai.site/posts/cf0f47fd/)
+
+> - markdown 各种其它语法插件，latex公式支持，mermaid图表，plant uml图表，URL卡片，bilibili卡片，github卡片，豆瓣卡片，插入音乐和视频，插入脑图，插入PDF，嵌入iframe
+
+- [在 Hexo 博客中插入 ECharts 动态图表](https://blog.17lai.site/posts/217ccdc1/)
+- [使用nodeppt给hexo博客嵌入PPT演示](https://blog.17lai.site/posts/546887ac/)
+- [Vercel部署高级用法教程](https://blog.17lai.site/posts/e922fac8/)
