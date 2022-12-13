@@ -24,7 +24,7 @@ excerpt: 几行代码把自己博客的流量轻松变现
 
 本文提供的方式需要 Fluid v1.9.0 以上版本。
 
-然后在博客根目录下找到 `script` 文件夹（不存在就创建一个），进入后任意创建一个 js 文件，比如 `inject.js`，复制以下内容：
+然后在博客根目录下找到 `scripts` 文件夹（不存在就创建一个），进入后任意创建一个 js 文件，比如 `inject.js`，复制以下内容：
 
 ```javascript
 hexo.extend.filter.register('theme_inject', function(injects) {
