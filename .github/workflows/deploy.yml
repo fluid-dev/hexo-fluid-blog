@@ -19,7 +19,7 @@ jobs:
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
-        node-version: "12.x"
+        node-version: "14.x"
 
     - name: Install NodeModules
       run: |
@@ -41,14 +41,21 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Setup qshell
+      uses: foxundermoon/setup-qshell@v5
+      with:
+        version: '2.12.0'
+
     - name: Upload to OSS
       env:
-        OSS_AccessKeyID: ${{ secrets.OSS_AccessKeyID }}
-        OSS_AccessKeySecret: ${{ secrets.OSS_AccessKeySecret }}
+        QINIU_ACCESSKEY: ${{ secrets.QINIU_ACCESSKEY }}
+        QINIU_SECRETKEY: ${{ secrets.QINIU_SECRETKEY }}
+        QINIU_BUCKET: 'fluid-dev'
       run: |
-        wget -q https://gosspublic.alicdn.com/ossutil/1.7.3/ossutil64
-        chmod +x ./ossutil64
-        ./ossutil64 config -e oss-ap-southeast-1.aliyuncs.com -i $OSS_AccessKeyID -k $OSS_AccessKeySecret -L CH
-        ./ossutil64 cp -r -f oss://fluid-dev/docs ./public/
-        ./ossutil64 rm -r -f oss://fluid-dev/
-        ./ossutil64 cp -r -f ./public oss://fluid-dev/
+        qshell account $QINIU_ACCESSKEY $QINIU_SECRETKEY action
+        qshell listbucket $QINIU_BUCKET -o bucket.txt
+        awk -F '\t' '!/docs\// && !/Key/ {print $1}' bucket.txt > to_delete.txt
+        qshell batchdelete -F'\t' --force $QINIU_BUCKET -i to_delete.txt
+        qshell qupload2 --src-dir=./public --bucket=$QINIU_BUCKET --overwrite
+        echo 'https://fluid-dev.com/\nhttps://hexo.fluid-dev.com/' >> cdnrefresh.txt
+        qshell cdnrefresh --dirs -i cdnrefresh.txt
