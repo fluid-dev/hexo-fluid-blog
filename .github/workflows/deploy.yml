@@ -57,5 +57,5 @@ jobs:
         awk -F '\t' '!/docs\// && !/Key/ {print $1}' bucket.txt > to_delete.txt
         qshell batchdelete -F'\t' --force $QINIU_BUCKET -i to_delete.txt
         qshell qupload2 --src-dir=./public --bucket=$QINIU_BUCKET --overwrite
-        echo 'https://fluid-dev.com/\nhttps://hexo.fluid-dev.com/' >> cdnrefresh.txt
+        echo 'https://hexo.fluid-dev.com/' >> cdnrefresh.txt
         qshell cdnrefresh --dirs -i cdnrefresh.txt
