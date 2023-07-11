@@ -2,7 +2,7 @@
 title: 利用 GitHub Actions 自动部署 Hexo 博客
 author: 张凯强
 date: 2020-05-23 19:00:00
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/actions-deploy/cover.png?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/actions-deploy/cover.png?w=480&fmt=webp
 category: 实用技巧
 tags:
   - 部署
@@ -81,7 +81,7 @@ ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
 
 然后 `{% raw %}${{ secrets.SSH_PRIVATE }}{% endraw %}` 这种调用方式，需要提前在下图中设置常量：
 
-![](https://rmt.dogedoge.com/fetch/fluid/storage/actions-deploy/1.png?w=1280&fmt=webp)
+![](https://fluid.s3.bitiful.net/actions-deploy/1.png?w=1280&fmt=webp)
 
 这样做可以避免敏感数据放在 yml 文件中被泄漏，即使你是私有仓库也建议这样做，因为设置的常量是无法被二次查看的，就算你账号被盗也不用担心。
 

@@ -1,7 +1,7 @@
 ---
 title: 在 Fluid 主题中加入谷歌广告
 author: 张凯强
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/fluid-adsense/cover.png?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/fluid-adsense/cover.png?w=480&fmt=webp
 categories: 功能增强
 tags:
   - Fluid

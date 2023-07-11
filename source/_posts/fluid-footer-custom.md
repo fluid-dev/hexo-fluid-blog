@@ -2,7 +2,7 @@
 title: Fluid 页脚增加网站运行时长
 author: 张凯强
 date: 2020-10-17 19:00:00
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/fluid-footer-custom/cover.png?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/fluid-footer-custom/cover.png?w=480&fmt=webp
 category: 功能增强
 tags:
   - 花里胡哨

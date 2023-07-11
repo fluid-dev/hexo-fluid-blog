@@ -2,7 +2,7 @@
 title: 通过 Hexo 5 注入器为主题添加新功能
 author: 张凯强
 date: 2020-10-17 20:00:00
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-injector/cover.png?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/hexo-injector/cover.png?w=480&fmt=webp
 category: 功能增强
 tags:
   - 用户经验

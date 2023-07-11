@@ -139,7 +139,7 @@ footer:
 # Index Page
 #---------------------------
 index:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/vdysjx.png?w=1920&fmt=webp  # 首页 Banner 头图，以下相同
+  banner_img: https://fluid.s3.bitiful.net/bg/vdysjx.png?w=1920&fmt=webp  # 首页 Banner 头图，以下相同
 
   # 首页副标题的独立设置
   # Independent config of home page subtitle
@@ -156,7 +156,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/dojm2h.png?w=1920&q=100&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/dojm2h.png?w=1920&q=100&fmt=webp
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -380,7 +380,7 @@ valine:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/1cm6iu.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/1cm6iu.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -389,7 +389,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/sdqryn.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/sdqryn.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -398,7 +398,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/n7a9bv.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/n7a9bv.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -406,7 +406,7 @@ tag:
 # About Page
 #---------------------------
 about:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/4xvpqo.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/4xvpqo.png?w=1920&fmt=webp
   avatar: /img/avatar.png
   name: Fluid
   introduce: 简洁至上 / 丰富配置 / 充满活力
@@ -425,7 +425,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/post.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/post.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -434,7 +434,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/g8xjqe.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/g8xjqe.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -443,7 +443,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/73twhs.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/73twhs.png?w=1920&fmt=webp
   items:  # intro 与 image 可省略
     - {
       title: 'Install Fluid',

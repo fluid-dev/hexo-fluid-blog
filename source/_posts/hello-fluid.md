@@ -1,7 +1,7 @@
 ---
 title: Hello Fluid
 date: 2020-04-22 22:22:22
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: 主题示例
 tags:
   - 示例
@@ -89,7 +89,7 @@ Fluid 功能特性：
 
 ## 图片
 
-![](https://rmt.dogedoge.com/fetch/fluid/storage/post.png?w=1280&fmt=webp)
+![](https://fluid.s3.bitiful.net/post.png?w=1280&fmt=webp)
 
 ## LaTex
 
@@ -187,11 +187,11 @@ Class08 <--> C2: Cool label
 ### 组图
 
 {% gi 5 3-2 %}
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+  ![](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
 {% endgi %}
 
 ### 脚注

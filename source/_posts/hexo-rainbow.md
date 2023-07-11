@@ -2,7 +2,7 @@
 title: 使用 Rainbow 展示随机的英语句子
 author: 吃白饭
 date: 2020-05-08 17:12:56
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hexo-rainbow/rainbow.jpg?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/hexo-rainbow/rainbow.jpg?w=480&fmt=webp
 category: 功能增强
 tags:
   - 用户经验
@@ -97,7 +97,7 @@ ID编号从10001开始增加，若该ID不存在则随机返回语句，同`http
 Rainbow的展示网站为：https://rainbow.eatrice.top/
 欢迎大家访问和提供意见😊😊😊。
 
-![效果图](https://rmt.dogedoge.com/fetch/fluid/storage/hexo-rainbow/1.png?w=1280&fmt=webp)
+![效果图](https://fluid.s3.bitiful.net/hexo-rainbow/1.png?w=1280&fmt=webp)
 
 ## 安装
 

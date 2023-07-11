@@ -2,7 +2,7 @@
 title: 搭配 Fluid 如何优雅的写一篇文章
 author: Vince
 date: 2020-05-13 17:39:30
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/fluid-write/cover.jpg?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/fluid-write/cover.jpg?w=480&fmt=webp
 category: 主题示例
 tags: 
   - 用户经验
