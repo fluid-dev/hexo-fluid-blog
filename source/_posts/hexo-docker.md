@@ -2,7 +2,7 @@
 title: Hexo 使用 Docker 来写文章和调试博客 
 author: 夜法之书
 date: 2022-10-10 18:04:57
-index_img: https://blog.17lai.site/medias_webp/cover/hexo.webp
+index_img: https://fluid.s3.bitiful.net/hexo-docker/cover.png
 category: 实用技巧
 tags:
   - 用户经验
@@ -57,9 +57,9 @@ bloodstar/hexo
 >
 > 使用前面提到的 hexo docker ，启动运行 hexo docker 后，非自动安装 hexo-admin 以及常用插件，你也可以自定义安装你虚幻的插件， `vi /app/useRun.sh`。
 
-![hexo-admin 主界面](https://cimg1.17lai.site/data/2022/03/2620220326133730.png)
+![hexo-admin 主界面](https://fluid.s3.bitiful.net/hexo-docker/2620220326133730.png)
 
-![hexo-admin 编辑写作界面](https://cimg1.17lai.site/data/2022/03/2620220326133825.png)
+![hexo-admin 编辑写作界面](https://fluid.s3.bitiful.net/hexo-docker/2620220326133825.png)
 
 配置 hexo-admin 根目录下`_config.yml`:
 
@@ -86,7 +86,7 @@ metadata:
 >
 > 另一个hexo web 编辑界面，界面比hexo-admin更现代化。安装配置方法见[Github](https://github.com/gethexon/hexon)
 
-![hexon](https://cimg1.17lai.site/data/2022/05/29/20220529214918.webp)
+![hexon](https://fluid.s3.bitiful.net/hexo-docker/20220529214918.png)
 
 #### hexo-editor
 
@@ -94,15 +94,15 @@ metadata:
 >
 > 又一个hexo web 编辑器
 
-![hexo editor 登录](https://cimg1.17lai.site/data/2022/08/18/20220818101457.webp)
+![hexo editor 登录](https://fluid.s3.bitiful.net/hexo-docker/20220818101457.png)
 
-![hexo editor 预览](https://cimg1.17lai.site/data/2022/08/18/20220818101457-1.webp)
+![hexo editor 预览](https://fluid.s3.bitiful.net/hexo-docker/20220818101457-1.png)
 
-![hexo editor 编辑](https://cimg1.17lai.site/data/2022/08/18/20220818101457-2.webp)
+![hexo editor 编辑](https://fluid.s3.bitiful.net/hexo-docker/20220818101457-2.png)
 
 **支持手机**
 
-![](https://cimg1.17lai.site/data/2022/08/18/20220818101457-3.webp)
+![](https://fluid.s3.bitiful.net/hexo-docker/20220818101457-3.png)
 
 ### ssh key 部署
 
@@ -127,7 +127,7 @@ docker exec -it hexo /bin/bash
 
 > 推荐使用`SecurtCRT` 来远程访问你的`Docker`。
 
-![SecurtCRT](https://cimg1.17lai.site/data/2022/03/2620220326140201.png)
+![SecurtCRT](https://fluid.s3.bitiful.net/hexo-docker/2620220326140201.png)
 
 ### 自定义用户自动运行脚本
 
@@ -283,9 +283,9 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 sudo yum install docker-ce docker-ce-cli containerd.io
 ```
 
-![centos docker](https://cimg1.17lai.site/data/2022/03/2420220324173951.png)
+![centos docker](https://fluid.s3.bitiful.net/hexo-docker/2420220324173951.png)
 
-![centos docker](https://cimg1.17lai.site/data/2022/03/2420220324173951-1.png)完成安装
+![centos docker](https://fluid.s3.bitiful.net/hexo-docker/2420220324173951-1.png)完成安装
 
 步骤4
 
@@ -299,14 +299,14 @@ sudo systemctl start docker
 
 > 在系统应用的AppCenter中找到 Container  Station，可以直接点击安装即可。
 
-![qnap docker](https://cimg1.17lai.site/data/2022/03/2620220326110013.png)
+![qnap docker](https://fluid.s3.bitiful.net/hexo-docker/2620220326110013.png)
 
 ### 群晖 安装 Docker
 
 首先要说的是，x86 平台的群晖才能用的上 `Docker` 套件，因此，ARM 架构平台的群晖只能说非常遗憾了。
 　　打开套件中心，在 “所有套件” 中找到 `Docker` 并安装：
 
-![群晖 Docker](https://cimg1.17lai.site/data/2022/03/2620220326111828.png)
+![群晖 Docker](https://fluid.s3.bitiful.net/hexo-docker/2620220326111828.png)
 
 ## 系列教程
 

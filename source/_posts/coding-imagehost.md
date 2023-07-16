@@ -1,7 +1,7 @@
 ---
 title: Coding 免费图床方案
 date: 2022-03-11 23:47:47
-index_img: https://rmt.ladydaily.com/fetch/fluid/storage/coding-imagehost/cover.png?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/coding-imagehost/cover.png?w=480&fmt=webp
 categories: 功能增强
 tags:
   - 用户经验

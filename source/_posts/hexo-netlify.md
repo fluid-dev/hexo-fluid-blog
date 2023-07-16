@@ -2,7 +2,7 @@
 title: "Hexo Netlify CMS 在线编辑博客"
 author: 千泷
 date: 2021-04-20 22:41:54
-index_img: https://rmt.ladydaily.com/fetch/fluid/storage/hexo-netlify/cover.png?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/hexo-netlify/cover.png?w=480&fmt=webp
 category: 功能增强
 tags:
   - 用户经验

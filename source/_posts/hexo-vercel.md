@@ -1,14 +1,14 @@
 ---
-title: Vercel部署高级用法教程
+title: Vercel 部署高级用法教程
 author: 夜法之书
 date: 2022-10-10 18:55:57
-index_img: https://blog.17lai.site/medias_webp/cover/hexo.webp
+index_img: https://fluid.s3.bitiful.net/hexo-vercel/cover.png
 category: 实用技巧
 tags:
-  - vercel
-  - blog
+  - 用户经验
+  - 花里胡哨
   - Hexo
-excerpt: Vercel使用有不少需要仔细配置的地方，可惜的是，自定义Vercel缓存时间，Vercel重定向等使用方法略复杂，不是开箱即用，有一定使用门槛，故这里单独列一篇文章详细说明Vercel的一些高级使用方法！
+excerpt: Vercel 使用有不少需要仔细配置的地方，可惜的是，自定义 Vercel 缓存时间，Vercel 重定向等使用方法略复杂，不是开箱即用，有一定使用门槛，故这里单独列一篇文章详细说明Vercel的一些高级使用方法。
 ---
 
 {% note success %}
@@ -34,20 +34,20 @@ excerpt: Vercel使用有不少需要仔细配置的地方，可惜的是，自�
 - 首先注册一个账号 <https://vercel.com/>
 - 注册成功后进入页面，点击 `News Project`
 
-![img](https://cimg1.17lai.site/data/2022/09/04/20220904114329.webp)
+![img](https://fluid.s3.bitiful.net/hexo-vercel/20220904114329.png)
 
 - 然后通过绑定的 `github` 或者 `gitlab` 导入需要部署的项目
 
-![img](https://cimg1.17lai.site/data/2022/09/04/20220904114329-1.webp)
+![img](https://fluid.s3.bitiful.net/hexo-vercel/20220904114329-1.png)
 
 - 如果导入的项目是打包好的静态页，`FRAMEWORK PRESET` 选择 `Other` 。
 
-![img](https://cimg1.17lai.site/data/2022/09/04/20220904114329-2.webp)
+![img](https://fluid.s3.bitiful.net/hexo-vercel/20220904114329-2.png)
 
 - 点击 `deployed` 进行部署，如果部署失败可以查看报错信息是不是上一步的某些选项没有覆盖。部署成功后会进入如图所示的界面
 
 
-![img](https://cimg1.17lai.site/data/2022/09/27/re_214145.webp)
+![img](https://fluid.s3.bitiful.net/hexo-vercel/re_214145.png)
 
 ## 如何自定义域名
 
@@ -55,26 +55,26 @@ excerpt: Vercel使用有不少需要仔细配置的地方，可惜的是，自�
 - `vercel` 静态页挂载地址：
 - 进入到 setting 中可对项目进行一些设置，如项目名称
 
-![vercel 自定义域名](https://cimg1.17lai.site/data/2022/09/04/20220904114329-4.webp)
+![vercel 自定义域名](https://fluid.s3.bitiful.net/hexo-vercel/20220904114329-4.png)
 
 - 下面演示如何自定义域名，默认情况下部署成功后 `vercel` 会给你生成一个默认的域名，如果想要修改成自己的域名可将域名名称修改成自己的。
 - 当选择修改成自己的域名名称后，`vercel` 会检查域名指向的 `DNS` 对不对，如果不对的话会提示你域名的 DNS 应该如何配置，按照 `vercel` 提示的 `DNS` 信息
 
 在自己的域名的 `DNS` 配置中进行配置，如图
 
-![img](https://cimg1.17lai.site/data/2022/09/04/20220904114329-5.webp)
+![img](https://fluid.s3.bitiful.net/hexo-vercel/20220904114329-5.png)
 
 ## 配置多个域名
 
 对其他新增的域名选择重定向到自己的主域名即可
 
-![vercel 多域名配置](https://cimg1.17lai.site/data/2022/09/04/20220904114329-6.webp)
+![vercel 多域名配置](https://fluid.s3.bitiful.net/hexo-vercel/20220904114329-6.png)
 
 ## 自定义Vercel服务器位置
 
 > Vercel线路已经很快了，但是可以通过选择Vercel部署服务器位置，更进一步加快中国大陆，亚洲区域的访问速度！
 
-![Vercel服务器选择](https://cimg1.17lai.site/data/2022/09/04/20220904120615.webp)
+![Vercel服务器选择](https://fluid.s3.bitiful.net/hexo-vercel/20220904120615.png)
 
 香港服务器虽然没有严格测试，但是中国大陆速度应该是最快的！
 
@@ -126,7 +126,7 @@ excerpt: Vercel使用有不少需要仔细配置的地方，可惜的是，自�
 1. 使用 DNS 多线路分流，例如[DNSPOD 多线路负载均衡](https://blog.17lai.site/posts/5311b619/#DNSPOD-%E5%A4%9A%E7%BA%BF%E8%B7%AF%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1)
 2. 使用 Vercel 提供的 [redirects](https://vercel.com/docs/project-configuration#project-configuration/redirects) 或者 [rewrites](https://vercel.com/docs/project-configuration#project-configuration/rewrites)功能，把rss访问重定向到其它部署方式，例如Cloudflare
 
-![Vercel 流量](https://cimg1.17lai.site/data/2022/09/27/20220927103610.webp)
+![Vercel 流量](https://fluid.s3.bitiful.net/hexo-vercel/20220927103610.png)
 
 查看方法：[dashboard](https://vercel.com/dashboard) -> [usage](https://vercel.com/dashboard/usage)
 
@@ -164,9 +164,9 @@ excerpt: Vercel使用有不少需要仔细配置的地方，可惜的是，自�
 - 在服务A做一些调试，在线 debug 工作
 - 特别是在线 [pageseed](https://pagespeed.web.dev/) 测试调优，这种事必备方法。简单不需要新的 jsdelivr 版本调试本地 [docker-hexo](https://github.com/appotry/docker-hexo) 调试即可！
 
-![输入想转移的域名](https://cimg1.17lai.site/data/2022/08/20/20220820181601.webp)
+![输入想转移的域名](https://fluid.s3.bitiful.net/hexo-vercel/20220820181601.png)
 
-![点击确认转移域名](https://cimg1.17lai.site/data/2022/08/20/20220820181557.webp)
+![点击确认转移域名](https://fluid.s3.bitiful.net/hexo-vercel/20220820181557.png)
 
 ### 调试完毕后：
 
