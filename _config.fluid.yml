@@ -96,8 +96,9 @@ navbar:
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+    - { key: 'community', link: '/community/', name: '社群', icon: 'iconfont icon-wechat2-fill' }
+    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
     - {
       key: '文档',
       icon: 'iconfont icon-books',
