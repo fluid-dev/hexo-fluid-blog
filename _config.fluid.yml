@@ -426,7 +426,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://fluid.s3.bitiful.net/post.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/post.png?w=1920&fmt=webp
 
 
 #---------------------------

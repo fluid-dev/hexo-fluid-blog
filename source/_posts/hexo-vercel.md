@@ -2,7 +2,7 @@
 title: Vercel 部署高级用法教程
 author: 夜法之书
 date: 2022-10-10 18:55:57
-index_img: https://fluid.s3.bitiful.net/hexo-vercel/cover.png
+index_img: https://fluid.s3.bitiful.net/hexo-vercel/cover.png?w=480&fmt=webp
 category: 实用技巧
 tags:
   - 用户经验

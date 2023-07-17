@@ -88,7 +88,7 @@ Fluid 功能特性：
 
 ## 图片
 
-![这是图片描述](https://fluid.s3.bitiful.net/post.png?w=1280&fmt=webp)
+![这是图片描述](https://fluid.s3.bitiful.net/bg/post.png?w=1280&fmt=webp)
 
 ## LaTex
 

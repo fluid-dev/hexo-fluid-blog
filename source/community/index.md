@@ -21,9 +21,7 @@ Fluid 社群定位于**聚集志同道合、兴趣相投、和谐友善、热爱
 
 目前仅有微信端社群，扫描二维码添加好友后等待邀请
 
-<p><b>好友申请备注：fluid</b></p>
-
-<img width="200" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png">
+<img width="128" title="好友申请备注：fluid" src="https://fluid.s3.bitiful.net/wechat.png">
 
 希望你可以和群友找到共同话题，并保持在群内的互动频率。
 

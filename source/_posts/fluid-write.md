@@ -132,23 +132,33 @@ iframe 页面镶套可以帮助我们更好的展示一个页面。比如以下�
 
 #### details 标签
 
-用于展示代码较多需要折叠或折叠相关内容，以下为演示。`summary` 填写显示名称。
+用于展示代码较多需要折叠或折叠相关内容，以下为演示，`summary` 填写显示名称。
 
 <details>
 <summary>Demo</summary>
-```
-<p><b>好友申请备注：fluid</b></p>
-<p><b>提问之前请先仔细查阅用户文档</b></p>
-<img width="200" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png" alt="wechat">
+```go
+type Map struct {
+  mu Mutex
+  read atomic.Value
+  dirty map[interface{}]*entry
+  misses int
+}
 ```
 </details>
 
-```
+对应的实现代码：
+
+```text
 <details>
 <summary>Demo</summary>
-<p><b>好友申请备注：fluid</b></p>
-<p><b>提问之前请先仔细查阅用户文档</b></p>
-<img width="200" src="https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png" alt="wechat">
+```go
+type Map struct {
+  mu Mutex
+  read atomic.Value
+  dirty map[interface{}]*entry
+  misses int
+}
+\```
 </details>
 ```
 

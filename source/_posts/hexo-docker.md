@@ -2,7 +2,7 @@
 title: Hexo 使用 Docker 来写文章和调试博客 
 author: 夜法之书
 date: 2022-10-10 18:04:57
-index_img: https://fluid.s3.bitiful.net/hexo-docker/cover.png
+index_img: https://fluid.s3.bitiful.net/hexo-docker/cover.png?w=480&fmt=webp
 category: 实用技巧
 tags:
   - 用户经验
