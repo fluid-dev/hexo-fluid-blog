@@ -184,6 +184,24 @@ Class08 <--> C2: Cool label
 
 {% btn javascript:;, 支持链接 %}
 
+### 折叠块
+
+{% fold @折叠块的标题 %}
+折叠内容，可以写文字 或者 `markdown`
+{% endfold %}
+
+{% fold info @折叠代码块 %}
+```python
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+fib(1000)
+```
+{% endfold %}
+
 ### 组图
 
 {% gi 5 3-2 %}
