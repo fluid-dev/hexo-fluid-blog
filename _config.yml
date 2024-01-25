@@ -102,11 +102,14 @@ nofollow:
 sitemap:
   path: sitemap.xml
 
-memorial_day:
-  # Better to close it when it is not used
-  enable: false
-  # Specified date will be greyed
-  day: 12-13
+mourning:
+  # It's recommended to disable it when not in use
+  enable: true
+  # Specify the date(s) to be greyed out. You can set dates in the format yyyy-MM-dd or MM-dd
+  day:
+    - 04-04
+    - 05-12
+    - 12-13
 
 pandoc:
   extensions:
