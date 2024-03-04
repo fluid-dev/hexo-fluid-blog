@@ -55,7 +55,7 @@ web_analytics:  # 网页访问统计
     app_key: fUOlkXhD9wcmxOTed9NdlqPH
     # REST API 服务器地址，国际版不填
     # Only the Chinese mainland users need to set
-    server_url: https://lyt8mpsi.lc-cn-e1-shared.com
+    server_url: https://lyt8mpsi.lc-cn-n1-shared.com
 
 # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
 # Lazy loading of images on the page
@@ -373,7 +373,7 @@ valine:
   lang: zh-CN
   highlight: true
   recordIP: true
-  serverURLs: https://lyt8mpsi.lc-cn-e1-shared.com
+  serverURLs: https://lyt8mpsi.lc-cn-n1-shared.com
 
 
 #---------------------------
