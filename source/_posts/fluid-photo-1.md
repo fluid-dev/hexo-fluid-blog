@@ -1,59 +1,59 @@
 ---
-title: Fluid 摄影大赛开启作品征集
+title: Fluid 摄影大赛#1
 author: Fluid 社群
 index_img: https://fluid.s3.bitiful.net/fluid-photo/cover-1.png?w=480&fmt=webp
 categories: 社群动态
 tags:
   - 社群
 date: 2024-02-05 17:30:00
-excerpt: 首届 Fluid 摄影大赛正式开启作品征集
+excerpt: 首届 Fluid 摄影大赛圆满结束，获奖作品展览
 ---
 
 ## 比赛介绍
 
 为了满足 Fluid 社群成员的精神需求，促进群友之间的感情，首届 Fluid 摄影大赛正式开启作品征集。
 
-**本届比赛不设任何主题，题材除人像、写真、航拍、打鸟、动物特写以外其他均可**
+**本届比赛不设任何主题，题材除人像、写真、航拍、打鸟、动物特写以外其他均可。**
 
-## 投稿规则
+## 获奖作品
 
-比赛分为两个组别：
-- 相机组：限定使用数码相机或胶片相机拍摄的作品
-- 手机组：限定使用手机且不使用任何外接镜头拍摄的作品
+#### 相机组金奖
 
-**每位参赛者只能选择一个组别进行参赛，至多投稿 5 个单幅作品，且需附上描述文字来阐释作品的立意或者背景，如果 500px 用户名不是群昵称，最好在描述里附上群昵称**
+![冬季秦岭雾凇雪景 @凉风](https://fluid.s3.bitiful.net/fluid-photo/camera-1.png?fmt=webp)
 
-参赛者必须 [加入 Fluid 社群](/community/) 才能投稿。
+#### 相机组银奖
 
-比赛评委不得参赛。
+![黄河小浪底 @Bob](https://fluid.s3.bitiful.net/fluid-photo/camera-2.png?fmt=webp)
+
+#### 相机组铜奖
+
+![粤西婚礼纪录 @鸣珂](https://fluid.s3.bitiful.net/fluid-photo/camera-3.png?fmt=webp)
+
+#### 手机组金奖
+
+（轮空）
+
+#### 手机组银奖
+
+（轮空）
+
+#### 手机组铜奖
+
+（并列获奖）
+
+![几枝红柿出墙来 @Abner](https://fluid.s3.bitiful.net/fluid-photo/phone-1.png?fmt=webp)
+
+![神都龙年行记 @AlanBiao](https://fluid.s3.bitiful.net/fluid-photo/phone-2.png?fmt=webp)
 
 ## 奖项
 - 相机组：评选出 3 幅作品，奖金依次为 1000 元、600 元、400 元
 - 手机组：评选出 3 幅作品，奖金依次为 500 元、300 元、200 元
 
-**同一个参赛者至多只会有 1 幅作品获奖**
+## 参赛作品
 
-## 作品要求
-- **作品必须是 2024 年内所拍摄**；
-- 作品内任何元素均需为真实拍摄所得，不得使用 AI 生成或通过其他技术合成；
-- 允许使用修图软件进行适当后期，但不得明显修改作品原始内容；
-- 提交作品必须包含完整 EXIF 信息，不得篡改 EXIF 信息；
-- 作品必须符合法律法规要求。
+[相机组作品集](http://500px.com.cn/s/b1bf41a06a7f6a070cd9ee2d7c0806e7c2c88a4e60dc5844eb4403e34c78165f1112f114bcb5bfa0?swipe=1)
 
-## 投稿方式
-
-[注册 500px 并申请加入部落](https://500px.com.cn/page/tribe/detail?tribeId=92c5a21769da441aad1d8e39f0f3efbd&pagev=works)，申请时注意备注群昵称，否则不通过。
-
-然后在部落页面右上方点击投稿按钮，上传图片（单图或组图，最多 5 张）：
-![投稿步骤](https://fluid.s3.bitiful.net/fluid-photo/step.png?w=640&fmt=webp)
-
-## 评选说明
-群友可在上方链接对作品进行点赞和评论，评委会内部会对所有作品进行评判，并结合点赞等作为参考，最后评选出结果。
-
-## 比赛时间
-- 投稿：2024 年 02 月 05 日 - 2024 年 03 月 05 日
-- 评选：2024 年 03 月 06 日 - 2024 年 03 月 10 日
-- 公布结果： 2024 年 03 月 11 日
+[手机组作品集](http://500px.com.cn/s/ed015c68192ef2c5edccf0516108436348eb07af561d93542df2fae8138f30371112f114bcb5bfa0?swipe=1)
 
 ## 鸣谢
 本比赛所有奖金由 @啥事都想试试·团子 特别赞助！
