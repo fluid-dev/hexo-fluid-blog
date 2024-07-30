@@ -35,7 +35,7 @@ excerpt: 專為Fluid開發的VSCode的插件/擴展，裡面集合了所有常�
 ![Command palette](https://github.com/f88083/hexo-snippet-paste-tool-for-fluid/raw/HEAD/img/f1.png)
 1. 輸入`Fluid Paste Tool`，基本上不需要全部輸入就會顯示這個擴展的命令，輸入幾個字符後應該會看到如下所示的命令列表
 ![Commands](https://github.com/f88083/hexo-snippet-paste-tool-for-fluid/raw/HEAD/img/commands.png)
-1. 所有可用命令如下所列（大多數片段可以在[Fluid文件](https://hexo.fluid-dev.com/docs/en/guide/)中找到），詳細命令信息可以在我的[筆記](https://hackmd.io/@simonlai23/HJGxJqQCp)中找到
+1. 所有可用命令如下所列（大多數片段可以在[Fluid文件](https://hexo.fluid-dev.com/docs/en/guide/)中找到），詳細命令資訊可以在我的[筆記](https://hackmd.io/@simonlai23/HJGxJqQCp)中找到
     * Paste Youtube Embed Code
     * Paste Fold Block
     * Paste Note
