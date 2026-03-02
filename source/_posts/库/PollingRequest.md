@@ -15,5 +15,5 @@ PyPI:
 
 [Client Challenge](https://pypi.org/project/PollingRequest)
 
-![画板](/Blog/imgs/PRYL.png)
+![工作原理](/Blog/imgs/PRYL.png)
 
