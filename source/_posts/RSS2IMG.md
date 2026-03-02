@@ -22,7 +22,7 @@ URL: https://cloudfunction.pythonanywhere.com/rss2img/
 ## 示例
 URL: [https://cloudfunction.pythonanywhere.com/rss2img/?url=https://www.minecraft.net/en-us/feeds/community-content/rss](https://cloudfunction.pythonanywhere.com/rss2img/?url=https://www.minecraft.net/en-us/feeds/community-content/rss)
 
-![](../../images/1772345302616-ec254385-8751-4095-8c38-13918c724b9e.png)
+![](/Blog/imgs/RSS2IMGEx.png)
 
 _[图片:示例返回(2026/3/1)]_
 
