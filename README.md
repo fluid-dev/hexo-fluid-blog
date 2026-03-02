@@ -13,20 +13,6 @@
 - **GitHub Actions** - 自动构建和部署
 - **GitHub Pages** - 免费托管服务
 
-## 📂 目录结构
-
-```
-.
-├── .github/workflows     # GitHub Actions 部署配置
-├── source                # 博客源文件
-│   ├── _posts            # 文章目录（Markdown 文件）
-│   ├── img               # 图片资源
-│   └── css               # 自定义样式
-├── themes/fluid          # Fluid 主题
-├── _config.yml           # 博客配置文件
-└── package.json          # 依赖管理
-```
-
 ## ✍️ 文章列表
 
 这里记录了我的一些项目和日常折腾：
