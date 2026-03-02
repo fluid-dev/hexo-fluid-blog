@@ -96,19 +96,6 @@ navbar:
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
-    - { key: 'community', link: '/community/', name: '社群', icon: 'iconfont icon-wechat2-fill' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - {
-      key: '文档',
-      icon: 'iconfont icon-books',
-      link: '#',
-      submenu: [
-      { key: '安装主题', link: 'https://hexo.fluid-dev.com/docs/start/' },
-      { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/guide/' },
-      { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/icon/' }
-      ]
-    }
 
 
 #---------------------------
@@ -119,9 +106,7 @@ footer:
   # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener">基于 Hexo Fluid</a>
   '
 
   # 展示网站的 PV、UV 统计数
@@ -403,22 +388,6 @@ tag:
 
 
 #---------------------------
-# 关于页
-# About Page
-#---------------------------
-about:
-  banner_img: https://fluid.s3.bitiful.net/bg/4xvpqo.png?w=1920&fmt=webp
-  avatar: /img/avatar.png
-  name: Fluid
-  introduce: 简洁至上 / 丰富配置 / 充满活力
-  # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
-  # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
-  icons:
-    - { class: 'iconfont icon-github-fill', link: 'https://github.com/fluid-dev/hexo-theme-fluid', tip: 'GitHub' }
-    - { class: 'iconfont icon-note', link: 'https://hexo.fluid-dev.com/docs/', tip: '主题文档' }
-
-
-#---------------------------
 # 自定义页
 # Custom Page
 #
@@ -436,31 +405,3 @@ page:
 page404:
   enable: true
   banner_img: https://fluid.s3.bitiful.net/bg/g8xjqe.png?w=1920&fmt=webp
-
-
-#---------------------------
-# 友链页
-# Links Page
-#---------------------------
-links:
-  enable: true
-  banner_img: https://fluid.s3.bitiful.net/bg/73twhs.png?w=1920&fmt=webp
-  items:  # intro 与 image 可省略
-    - {
-      title: 'Install Fluid',
-      intro: '安装主题',
-      link: 'https://hexo.fluid-dev.com/docs/start/',
-      image: '/img/favicon.png'
-    }
-    - {
-      title: 'Fluid Docs',
-      intro: '主题使用指南',
-      link: 'https://hexo.fluid-dev.com/docs/',
-      image: '/img/favicon.png'
-    }
-    - {
-      title: 'Fluid Repo',
-      intro: '主题 GitHub 仓库',
-      link: 'https://github.com/fluid-dev/hexo-theme-fluid',
-      image: '/img/favicon.png'
-    }
