@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo Theme Fluid
-subtitle: Hexo Theme Fluid
-description: An elegant Material-Design theme for Hexo
-keywords: hexo,theme,fluid,material,material-design,blog
-author: Fluid
+title: Qiufeng Blog
+subtitle: Qiufeng Blog
+description: Qiufeng Blog
+keywords: hexo,theme,fluid,material,material-design,blog,qiufeng
+author: Qiufeng
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://fluid-dev.cn
-root: /
+url: https://qiufengcute.github.io/Blog
+root: /Blog
 permalink: /posts/:title/
 permalink_defaults:
 pretty_urls:
