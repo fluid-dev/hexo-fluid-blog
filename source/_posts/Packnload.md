@@ -1,3 +1,16 @@
+---
+title: Packnload - Minecraft模组批量下载工具
+author: Qiufeng
+date: 2026-03-02 20:00:00
+category: 游戏工具
+tags:
+  - Minecraft
+  - 模组管理
+  - 批量下载
+  - 工具软件
+excerpt: 这是一款轻量级、高效的Minecraft Mod批量下载工具，可以根据配置文件自动下载指定的模组。
+---
+
 Github:
 
 [GitHub - qiufengcute/Packnload: 一款轻量级、高效的 Minecraft Mod 批量下载工具](https://github.com/qiufengcute/Packnload/)

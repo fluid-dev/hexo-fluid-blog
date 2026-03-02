@@ -1,3 +1,15 @@
+---
+title: IPv6 启用指南
+author: Qiufeng
+date: 2026-03-02 20:00:00
+category: 技术文档
+tags:
+  - IPv6
+  - 网络配置
+  - 教程
+excerpt: 这是一份详细的IPv6启用指南，帮助用户激活和配置IPv6网络连接。
+---
+
 Github:
 
 [GitHub - qiufengcute/IPv6-Activation-Guide: A IPv6 activation guide](https://github.com/qiufengcute/IPv6-Activation-Guide)

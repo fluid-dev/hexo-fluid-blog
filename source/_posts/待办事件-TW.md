@@ -1,3 +1,15 @@
+---
+title: 待办事件管理应用
+author: Qiufeng
+date: 2026-03-02 20:00:00
+category: 应用程序
+tags:
+  - 任务管理
+  - 待办事项
+  - Android
+excerpt: 这是一个待办事件管理应用程序，支持安装包和APK下载，并有B站演示视频。
+---
+
 1.0.0:
 
 安装包：

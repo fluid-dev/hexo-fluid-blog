@@ -1,3 +1,16 @@
+---
+title: MySub - 订阅统计工具
+author: Qiufeng
+date: 2026-03-02 20:00:00
+category: 应用程序
+tags:
+  - Python
+  - GUI
+  - 订阅统计
+  - 粉丝数监控
+excerpt: 这是一个用于统计和显示各平台订阅数/粉丝数的PySide6桌面应用程序，支持多种API接入。
+---
+
 代码:
 
 ```python

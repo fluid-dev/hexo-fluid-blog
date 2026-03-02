@@ -1,3 +1,15 @@
+---
+title: 运行JS代码 - Scratch扩展
+author: Qiufeng
+date: 2026-03-02 20:00:00
+category: 编程工具
+tags:
+  - Scratch
+  - JavaScript
+  - 扩展开发
+excerpt: 这是一个可以在Scratch中运行JavaScript代码的扩展，支持同步和异步执行方式。
+---
+
 [蓝奏云优享版](https://www.ilanzou.com/s/VcTZA1Nj)
 
 教程：
