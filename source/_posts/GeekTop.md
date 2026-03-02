@@ -12,9 +12,6 @@ excerpt: 这是一个名为GeekTop的项目，提供相关资源下载。
 
 蓝奏优享:
 
-https://www.ilan删掉我zou.com/s/XNpn91NL
-
-
-
+[蓝奏云](https://www.ilanzou.com/s/XNpn91NL)
 
 
