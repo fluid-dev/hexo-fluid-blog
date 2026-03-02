@@ -6,32 +6,51 @@ on:
       - master
 
 jobs:
-  deploy:
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Download Branch
+      uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+    - name: Update Submodule
+      run: |
+        git submodule init
+        git submodule update --remote
 
-      - name: Install dependencies
-        run: npm install
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "14.x"
 
-      - name: Install Pandoc
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc
+    - name: Install NodeModules
+      run: |
+        rm -f .yarnclean yarn.lock
+        yarn --non-interactive --silent
+        yarn list --depth=0
 
-      - name: Build Hexo
-        run: npm run build
+    - name: Install Pandoc
+      run: sudo apt-get install -y pandoc
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
-          force_orphan: true
+    - name: Hexo Generate
+      run: |
+        rm -rf ./public
+        yarn run hexo clean
+        yarn run hexo generate
+
+    - name: Turnstyle
+      uses: softprops/turnstyle@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build Hexo
+      run: npm run build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        publish_branch: gh-pages
+        force_orphan: true
