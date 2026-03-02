@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Build Hexo
-        run: npm run build
+        run: npm install
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
