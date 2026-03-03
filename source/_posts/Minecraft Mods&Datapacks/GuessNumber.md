@@ -19,7 +19,5 @@ Github:
 
 Modrinth:
 
-[https://modrinth.com/mod/guessnumber](https://modrinth.com/mod/guessnumber)
-
-(正在审核)
+[Modrinth](https://modrinth.com/mod/guessnumber)
 
