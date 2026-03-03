@@ -344,6 +344,20 @@ tag:
   enable: true
   banner_img: https://fluid.s3.bitiful.net/bg/n7a9bv.png?w=1920&fmt=webp
 
+#---------------------------
+# 关于页
+# About Page
+#---------------------------
+about:
+  banner_img: https://fluid.s3.bitiful.net/bg/4xvpqo.png?w=1920&fmt=webp
+  avatar: /imgs/icon.png
+  name: Qiufeng
+  introduce: 小工具 / ISTP / MIT 之神
+  # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
+  # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
+  icons:
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/qiufengcute', tip: 'GitHub' }
+    - { class: 'iconfont icon-bilibili', link: 'https://space.bilibili.com/3493083538786837', tip: 'Bilibili' }
 
 #---------------------------
 # 自定义页
