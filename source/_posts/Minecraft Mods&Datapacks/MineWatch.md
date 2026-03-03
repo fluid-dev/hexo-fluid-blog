@@ -19,7 +19,5 @@ Github:
 
 Modrinth:
 
-[https://modrinth.com/mod/minewatch](https://modrinth.com/mod/minewatch)
-
-(正在审核)
+[Modrinth](https://modrinth.com/mod/minewatch)
 
