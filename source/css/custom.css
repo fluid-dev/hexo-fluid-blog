@@ -1,9 +1,0 @@
-.banner {
-    min-height: 100vh !important;
-    background-position: center center !important;
-    background-size: cover !important;
-}
-
-.banner .mask {
-    min-height: 100vh !important;
-}
