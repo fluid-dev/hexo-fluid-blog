@@ -352,7 +352,7 @@ about:
   banner_img: https://fluid.s3.bitiful.net/bg/4xvpqo.png?w=1920&fmt=webp
   avatar: /imgs/icon.png
   name: Qiufeng
-  introduce: 小工具 / ISTP / MIT License
+  introduce: 小工具 / ISTP / 开发者
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
