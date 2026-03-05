@@ -12,5 +12,5 @@ excerpt: 这是一个多重徽章服务，提供在线徽章生成功能。
 
 API:
 
-[MultiBadge](https://multibadge.pythonanywhere.com/)
+[MultiBadge](https://qiufeng.pythonanywhere.com/mb)
 
