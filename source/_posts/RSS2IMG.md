@@ -10,7 +10,7 @@ tags:
 excerpt: 这是一个将RSS源转换为图片的服务，可以通过URL参数指定RSS地址。
 ---
 
-URL: https://cloudfunction.pythonanywhere.com/rss2img/
+URL: [https://qiufeng.pythonanywhere.com/mb/rss2img/](https://qiufeng.pythonanywhere.com/mb/rss2img/)
 
 参数列表:
 
@@ -20,7 +20,7 @@ URL: https://cloudfunction.pythonanywhere.com/rss2img/
 
 
 ## 示例
-URL: [https://cloudfunction.pythonanywhere.com/rss2img/?url=https://www.minecraft.net/en-us/feeds/community-content/rss](https://cloudfunction.pythonanywhere.com/rss2img/?url=https://www.minecraft.net/en-us/feeds/community-content/rss)
+URL: [https://qiufeng.pythonanywhere.com/r2i/?url=https://www.minecraft.net/en-us/feeds/community-content/rss](https://qiufeng.pythonanywhere.com/r2i/?url=https://www.minecraft.net/en-us/feeds/community-content/rss)
 
 ![示例返回(2026/3/1)](/Blog/imgs/RSS2IMGEx.png)
 
