@@ -10,7 +10,7 @@ tags:
 excerpt: 这是一个将RSS源转换为图片的服务，可以通过URL参数指定RSS地址。
 ---
 
-URL: [https://qiufeng.pythonanywhere.com/mb/rss2img/](https://qiufeng.pythonanywhere.com/mb/rss2img/)
+URL: [https://qiufeng.pythonanywhere.com/r2i/](https://qiufeng.pythonanywhere.com/r2i/)
 
 参数列表:
 
