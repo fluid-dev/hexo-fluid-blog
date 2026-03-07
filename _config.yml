@@ -95,6 +95,13 @@ sitemap:
   tags: true
   categories: true
 
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
+  order_by: -date
+
 nofollow:
   enable: true
   field: site
