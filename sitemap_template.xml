@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in posts %}
-  <url>
-    <loc>{{ post.permalink | uriencode }}</loc>
-    <lastmod>{{ post.updated | formatDate }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  {% endfor %}
-
   <url>
     <loc>{{ config.url | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
@@ -16,17 +7,33 @@
     <priority>1.0</priority>
   </url>
   
+  {% for post in posts %}
+  <url>
+    <loc>{{ post.permalink | uriencode }}</loc>
+    <lastmod>{{ post.updated | formatDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endfor %}
+  
   {% for page in pages %}
     {% if page.source == 'about/index.md' and page.updated %}
     <url>
-      <loc>{{ config.url }}/about/</loc>
+      <loc>{{page.permalink}}</loc>
       <lastmod>{{ page.updated | formatDate }}</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
+      <priority>0.6</priority>
     </url>
     {% endif %}
   {% endfor %}
 
+  <url>
+    <loc>{{ config.url | uriencode }}/tags</loc>
+    <lastmod>{{ sNow | formatDate }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
   {% for tag in tags %}
   <url>
     <loc>{{ tag.permalink | uriencode }}</loc>
@@ -36,6 +43,13 @@
   </url>
   {% endfor %}
 
+  <url>
+    <loc>{{ config.url | uriencode }}/categories</loc>
+    <lastmod>{{ sNow | formatDate }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
   {% for cat in categories %}
   <url>
     <loc>{{ cat.permalink | uriencode }}</loc>
