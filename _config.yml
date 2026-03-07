@@ -88,10 +88,8 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: fluid
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  - type: baidu_url_submitter
+sitemap:
+  path: sitemap.xml
 
 nofollow:
   enable: true
