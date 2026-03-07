@@ -96,8 +96,8 @@ sitemap:
   categories: true
 
 feed:
-  type: atom
-  path: atom.xml
+  type: rss2
+  path: rss.xml
   limit: 20
   content: true
   order_by: -date
