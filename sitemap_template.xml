@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in posts %}
-  <url>
-    <loc>{{ post.permalink | uriencode }}</loc>
-    {% if post.updated %}
-    <lastmod>{{ post.updated | formatDate }}</lastmod>
-    {% elif post.date %}
-    <lastmod>{{ post.date | formatDate }}</lastmod>
+    {% if not post.source.endswith('googled7112a4298bff859.html') %}
+    <url>
+      <loc>{{ post.permalink | uriencode }}</loc>
+      {% if post.updated %}
+      <lastmod>{{ post.updated | formatDate }}</lastmod>
+      {% elif post.date %}
+      <lastmod>{{ post.date | formatDate }}</lastmod>
+      {% endif %}
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url>
     {% endif %}
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   {% endfor %}
 
   <url>
@@ -20,8 +22,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <!-- about 页面（用真实的文件更新时间） -->
   {% set about_page = site.pages.find({source: 'about/index.md'}) %}
   <url>
     <loc>{{ config.url }}/about/</loc>
