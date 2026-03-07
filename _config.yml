@@ -91,12 +91,9 @@ theme: fluid
 
 sitemap:
   path: sitemap.xml
-  type:
-  include:
-    - /
-    - about/
-  exclude:
-    - googled7112a4298bff859.html
+  template: ./sitemap_template.xml
+  tags: true
+  categories: true
 
 nofollow:
   enable: true
