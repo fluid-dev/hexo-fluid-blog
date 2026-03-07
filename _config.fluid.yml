@@ -89,7 +89,7 @@ navbar:
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - { key: 'RSS', link: '/atom.xml', icon: 'iconfont icon-rss'}
+    - { key: 'RSS', link: '/rss.xml', icon: 'iconfont icon-rss'}
 
 
 #---------------------------
