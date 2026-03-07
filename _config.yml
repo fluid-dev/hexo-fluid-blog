@@ -91,6 +91,7 @@ theme: fluid
 
 sitemap:
   path: sitemap.xml
+  type:
   include:
     - /
     - about/
