@@ -34,7 +34,7 @@ jobs:
       run: sudo apt-get install -y pandoc
 
     - name: Install Hexo Sitemap Plugin
-      run: yarn add hexo-generator-sitemap --dev
+      run: yarn add hexo-generator-seo-friendly-sitemap --dev
 
     - name: Hexo Generate
       run: |
