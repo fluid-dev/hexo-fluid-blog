@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in posts %}
-    {% if not post.source.endswith('googled7112a4298bff859.html') %}
+    {% if not post.source.contains('googled7112a4298bff859.html') %}
     <url>
       <loc>{{ post.permalink | uriencode }}</loc>
       {% if post.updated %}
