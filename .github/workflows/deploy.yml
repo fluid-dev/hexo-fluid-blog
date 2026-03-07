@@ -36,6 +36,12 @@ jobs:
     - name: Install Hexo Sitemap Plugin
       run: yarn add hexo-generator-seo-friendly-sitemap --dev
 
+    - name: Find all sitemap plugins
+      run: |
+        yarn list --pattern "sitemap"
+        echo "--- checking node_modules ---"
+        ls -la node_modules | grep sitemap
+
     - name: Hexo Generate
       run: |
         rm -rf ./public
