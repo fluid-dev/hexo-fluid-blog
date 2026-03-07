@@ -15,11 +15,10 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
-  {% set about_page = site.pages.find({source: 'about/index.md'}) %}
+  
   <url>
     <loc>{{ config.url }}/about/</loc>
-    <lastmod>{{ about_page.updated | formatDate }}</lastmod>
+    <lastmod>{{ about.updated | formatDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
