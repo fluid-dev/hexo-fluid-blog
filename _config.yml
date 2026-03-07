@@ -94,8 +94,6 @@ sitemap:
 nofollow:
   enable: true
   field: site
-  exclude: # 不添加 nofollow 标签的连接
-    - fluid-dev.cn
 
 mourning:
   # It's recommended to disable it when not in use
