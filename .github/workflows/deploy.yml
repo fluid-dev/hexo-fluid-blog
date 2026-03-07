@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
 
