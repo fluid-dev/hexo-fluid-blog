@@ -7,21 +7,17 @@
     <priority>1.0</priority>
   </url>
 
-  {% for page in pages %}
-    {% if page.source == 'about/index.md' and page.updated %}
-    <url>
-      <loc>{{ config.url | uriencode }}/about</loc>
-      <lastmod>{{ page.updated | formatDate }}</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
-    </url>
-    {% endif %}
-  {% endfor %}
+  <url>
+    <loc>{{ config.url | uriencode }}/about</loc>
+    <lastmod>{{ sNow | formatDate }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   {% for post in posts %}
   <url>
     <loc>{{ post.permalink | uriencode }}</loc>
-    <lastmod>{{ post.updated | formatDate }}</lastmod>
+    <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
