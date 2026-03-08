@@ -70,8 +70,8 @@ llm_translation:
 本项目通过环境变量管理敏感信息。
 
 #### Vercel 部署
-在 Vercel 仪表盘的项目设置中，添加`LLM_API_KEY`环境变量。
-设置 Storage 连接，连接到neon PostgreSQL数据库。vercel会自动注入`DATABASE_URL`环境变量。
+在 Vercel 仪表盘的项目设置中，添加 `LLM_API_KEY` 环境变量。
+设置 Storage 连接，连接到 Neon PostgreSQL 数据库。Vercel 会自动注入 `DATABASE_URL` 环境变量。
 
 #### 本地构建
 
