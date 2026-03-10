@@ -2,13 +2,12 @@
 title: 基于大语言模型的 Hexo 博客自动化翻译方案
 date: 2026-01-05 18:47:13
 author: Tokisaki Galaxy
+index_img: https://fluid.s3.bitiful.net/hexo-translate-llm/cover.png?w=480&fmt=webp
+categories: 功能增强
 tags:
+  - 用户经验
+  - 花里胡哨
   - Hexo
-  - AI
-  - 翻译
-  - DeepSeek
-categories:
-  - 开发工具
 ---
 
 {% note success %}
