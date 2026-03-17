@@ -13,13 +13,11 @@ excerpt: 这是一个在Minecraft中显示时间的手表模组。
 
 Fabric 1.21.8-1.21.10
 
-Github:
-
-[GitHub - qiufengcute/MineWatch: A watch that tells time in Minecraft](https://github.com/qiufengcute/MineWatch)
-
-Modrinth:
+[GitHub](https://github.com/qiufengcute/MineWatch)
 
 [Modrinth](https://modrinth.com/mod/minewatch)
+
+[MC 百科](https://www.mcmod.cn/class/25328.html)
 
 ---
 
