@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Download Branch
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6.0.2
 
     - name: Update Submodule
       run: |
@@ -24,7 +24,7 @@ jobs:
         git submodule update --remote
 
     - name: Setup Node
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6.3
       with:
         node-version: "14.x"
 
