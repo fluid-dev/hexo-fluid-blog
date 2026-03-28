@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{ config.url | uriencode }}</loc>
+    <loc>{{ config.url | url_encode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>{{ config.url | uriencode }}/about</loc>
+    <loc>{{ config.url | url_encode }}/about</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   {% for post in posts %}{% if post.permalink != "https://qiufengcute.github.io/Blog/about/index.html" %}
   <url>
-    <loc>{{ post.permalink | replace('&', '&amp;')) | uriencode }}</loc>
+    <loc>{{ post.permalink | url_encode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   {% endif %}{% endfor %}
   <url>
-    <loc>{{ config.url | uriencode }}/tags</loc>
+    <loc>{{ config.url | url_encode }}/tags</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.2</priority>
   </url>
   {% for tag in tags %}
   <url>
-    <loc>{{ tag.permalink | replace('&', '&amp;')) | uriencode }}</loc>
+    <loc>{{ tag.permalink | url_encode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   {% endfor %}
   <url>
-    <loc>{{ config.url | uriencode }}/categories</loc>
+    <loc>{{ config.url | url_encode }}/categories</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.2</priority>
   </url>
   {% for cat in categories %}
   <url>
-    <loc>{{ cat.permalink | replace('&', '&amp;')) | uriencode }}</loc>
+    <loc>{{ cat.permalink | url_encode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
