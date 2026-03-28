@@ -1,5 +1,5 @@
 ---
-title: Scratch扩展
+title: qiufeng - Scratch扩展
 author: Qiufeng
 date: 2026-03-02 20:00:00
 category: 编程工具
