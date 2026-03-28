@@ -13,23 +13,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
-  {% for post in posts %}
+  {% for post in posts %}{% if post.permalink != "https://qiufengcute.github.io/Blog/about/index.html" %}
   <url>
     <loc>{{ post.permalink | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  {% endfor %}
-
+  {% endif %}{% endfor %}
   <url>
     <loc>{{ config.url | uriencode }}/tags</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.2</priority>
   </url>
-  
   {% for tag in tags %}
   <url>
     <loc>{{ tag.permalink | uriencode }}</loc>
@@ -38,14 +35,12 @@
     <priority>0.2</priority>
   </url>
   {% endfor %}
-
   <url>
     <loc>{{ config.url | uriencode }}/categories</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.2</priority>
   </url>
-  
   {% for cat in categories %}
   <url>
     <loc>{{ cat.permalink | uriencode }}</loc>
