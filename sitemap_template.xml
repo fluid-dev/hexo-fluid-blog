@@ -15,35 +15,35 @@
   </url>
   {% for post in posts %}{% if post.permalink != "https://qiufengcute.github.io/Blog/about/index.html" %}
   <url>
-    <loc>{{ post.permalink | escape | uriencode }}</loc>
+    <loc>{{ post.permalink.toString() | escape | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   {% endif %}{% endfor %}
   <url>
-    <loc>{{ config.url | escape | uriencode }}/tags</loc>
+    <loc>{{ config.url | uriencode }}/tags</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.2</priority>
   </url>
   {% for tag in tags %}
   <url>
-    <loc>{{ tag.permalink | escape | uriencode }}</loc>
+    <loc>{{ tag.permalink.toString() | escape | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   {% endfor %}
   <url>
-    <loc>{{ config.url | uriencode | escape | uriencode }}/categories</loc>
+    <loc>{{ config.url | uriencode }}/categories</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.2</priority>
   </url>
   {% for cat in categories %}
   <url>
-    <loc>{{ cat.permalink | escape | uriencode }}</loc>
+    <loc>{{ cat.permalink.toString() | escape | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
