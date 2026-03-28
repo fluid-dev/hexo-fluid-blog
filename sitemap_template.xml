@@ -15,7 +15,7 @@
   </url>
   {% for post in posts %}{% if post.permalink != "https://qiufengcute.github.io/Blog/about/index.html" %}
   <url>
-    <loc>{{ post.permalink | uriencode }}</loc>
+    <loc>{{ post.permalink | replace('&', '&amp;')) | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
   </url>
   {% for tag in tags %}
   <url>
-    <loc>{{ tag.permalink | uriencode }}</loc>
+    <loc>{{ tag.permalink | replace('&', '&amp;')) | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -43,7 +43,7 @@
   </url>
   {% for cat in categories %}
   <url>
-    <loc>{{ cat.permalink | uriencode }}</loc>
+    <loc>{{ cat.permalink | replace('&', '&amp;')) | uriencode }}</loc>
     <lastmod>{{ sNow | formatDate }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
