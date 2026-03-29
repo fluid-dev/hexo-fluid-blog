@@ -44,6 +44,10 @@ custom_css:
 # Customize the HTML content at the bottom (located above the footer), be careful not to conflict with `post: custom`
 custom_html: ''
 
+# Google AdSense 广告
+google_adsense:
+  enable: false
+
 # 网页访问统计
 # Analysis of website visitors
 web_analytics:  # 网页访问统计
