@@ -12,7 +12,6 @@ concurrency:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -35,9 +34,6 @@ jobs:
 
     - name: Install Pandoc
       run: sudo apt-get install -y pandoc
-
-    - name: Install Hexo Sitemap Plugin
-      run: yarn add hexo-generator-sitemap --dev
 
     - name: Hexo Generate
       run: |
