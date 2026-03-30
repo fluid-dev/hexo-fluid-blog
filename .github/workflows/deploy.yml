@@ -42,9 +42,10 @@ jobs:
         yarn run hexo clean
         yarn run hexo generate
 
-    - name: Upload Pages Artifact
-      uses: actions/upload-pages-artifact@v4.0.0
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v7
       with:
+        name: github-pages
         path: ./public
 
   deploy:
