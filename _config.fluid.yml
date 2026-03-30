@@ -102,7 +102,7 @@ footer:
   content: '
     基于 <a href="https://hexo.io" target="_blank" rel="nofollow noopener">Hexo</a> 
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">Fluid</a>
-    <div style="font-size: 0.85rem">
+    <div id="createTime" style="font-size: 0.85rem" title="载入创建时间...">
       <span id="timeDate">载入天数...</span>
       <span id="times">载入时分秒...</span>
       <script src="/Blog/js/duration.js"></script>
