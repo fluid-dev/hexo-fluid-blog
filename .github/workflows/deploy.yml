@@ -42,6 +42,16 @@ jobs:
         yarn run hexo clean
         yarn run hexo generate
 
+    - name: Archive artifact
+      run: |
+        tar \
+          --dereference --hard-dereference \
+          --directory ./public \
+          -cvf artifact.tar \
+          --exclude=.git \
+          --exclude=.github \
+          .
+
     - name: Upload Artifact
       uses: actions/upload-artifact@v7
       with:
