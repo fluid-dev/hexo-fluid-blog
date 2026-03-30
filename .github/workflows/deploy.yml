@@ -6,6 +6,10 @@ on:
       - master
   workflow_dispatch:
 
+permissions:
+  pages: write
+  id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -17,11 +21,8 @@ jobs:
     steps:
     - name: Download Branch
       uses: actions/checkout@v6.0.2
-
-    - name: Update Submodule
-      run: |
-        git submodule init
-        git submodule update --remote
+      with:
+        submodules: true
 
     - name: Setup Node
       uses: actions/setup-node@v6.3.0
@@ -41,9 +42,22 @@ jobs:
         yarn run hexo clean
         yarn run hexo generate
 
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.8.0
+    - name: Upload Pages Artifact
+      uses: actions/upload-pages-artifact@v4.0.0
       with:
-        folder: public
-        branch: gh-pages
-        token: ${{ secrets.GITHUB_TOKEN }}
+        path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v6.0.0
+    
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3.0.2-node.24
