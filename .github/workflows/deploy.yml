@@ -56,7 +56,7 @@ jobs:
       uses: actions/upload-artifact@v7
       with:
         name: github-pages
-        path: ./public
+        path: artifact.tar
 
   deploy:
     needs: build
