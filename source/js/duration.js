@@ -1,5 +1,6 @@
 !(function() {
   var start = new Date("2026/03/02 12:00:00");
+  document.getElementById("createTime").title = start.toLocaleString();
 
   function update() {
     var now = new Date();
@@ -21,7 +22,7 @@
     if(String(snum).length === 1 ){
       snum = "0" + snum;
     }
-    document.getElementById("timeDate").innerHTML = "本站安全运行&nbsp"+dnum+"&nbsp天";
+    document.getElementById("timeDate").innerHTML = "本站已运行&nbsp"+dnum+"&nbsp天";
     document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
   }
 
