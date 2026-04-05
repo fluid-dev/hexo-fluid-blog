@@ -6,6 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
+    "upload:cos": "hexo clean && hexo generate && node scripts/upload-cos.js",
     "server": "hexo server"
   },
   "hexo": {
@@ -27,5 +28,9 @@
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
     "hexo-tag-echarts": "^1.0.0"
+  },
+  "devDependencies": {
+    "cos-nodejs-sdk-v5": "^2.15.4",
+    "mime-types": "^3.0.2"
   }
 }
