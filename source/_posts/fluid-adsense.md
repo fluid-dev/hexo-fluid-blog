@@ -35,7 +35,7 @@ hexo.extend.filter.register('theme_inject', function(injects) {
 });
 ```
 
-以上代码的意思请参考 [Fluid 注入功能](https://hexo.fluid-dev.com/docs/advance/#fluid-%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81)，插入的广告位置和本页是一样的，分别是文章页的左侧和文末位置。
+以上代码的意思请参考 [Fluid 注入功能](https://fluid.ist/docs/advance/#fluid-%E6%B3%A8%E5%85%A5%E4%BB%A3%E7%A0%81)，插入的广告位置和本页是一样的，分别是文章页的左侧和文末位置。
 
 复制之后，把其中 `ca-pub-xxxxxx` 和 `data-ad-slot="yyyyyy"` 按谷歌广告里提供的编号替换即可。
 

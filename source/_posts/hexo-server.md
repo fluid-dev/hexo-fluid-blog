@@ -487,7 +487,7 @@ $ nginx -t
 
 ### 数学公式
 
-在此补充一下之前公式不显示的问题。虽然[Fluid](https://hexo.fluid-dev.com/docs/)主题支持**LaTeX 数学公式**，但是需要手动操作，而且我按照[教程](https://hexo.fluid-dev.com/docs/guide/#latex-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F)开启本功能`mathjax`没有成功，即公式在网页里并没有被渲染和转换。通过网上查找，发现解决这类问题的思路主要是换渲染引擎[^7]，例如`pandoc`、`mathjax`、`katex`。我目前使用`mathjax`，操作如下：
+在此补充一下之前公式不显示的问题。虽然[Fluid](https://fluid.ist/docs/)主题支持**LaTeX 数学公式**，但是需要手动操作，而且我按照[教程](https://fluid.ist/docs/guide/#latex-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F)开启本功能`mathjax`没有成功，即公式在网页里并没有被渲染和转换。通过网上查找，发现解决这类问题的思路主要是换渲染引擎[^7]，例如`pandoc`、`mathjax`、`katex`。我目前使用`mathjax`，操作如下：
 
 - **卸载**默认引擎，并**安装**这个新的渲染引擎
 
@@ -535,7 +535,7 @@ $ nginx -t
   <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   ```
 
-- 按照[Fluid](https://hexo.fluid-dev.com/docs/)的[快速开始](https://hexo.fluid-dev.com/docs/guide/#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)，需要修改**主题配置**，打开`/source/_data/fluid_config.yml` 文件
+- 按照[Fluid](https://fluid.ist/docs/)的[快速开始](https://fluid.ist/docs/guide/#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)，需要修改**主题配置**，打开`/source/_data/fluid_config.yml` 文件
 
   ```yml
   post:

@@ -74,7 +74,7 @@ Fluid 相较于其他主题的优势：
 
 Fluid 功能特性：
 
-- 无比详实的[用户文档](https://hexo.fluid-dev.com/docs/)
+- 无比详实的[用户文档](https://fluid.ist/docs/)
 - 页面组件懒加载
 - 多种代码高亮方案
 - 多语言配置
@@ -155,7 +155,7 @@ Class08 <--> C2: Cool label
 
 ## 内置 Tag 插件
 
-内置了一些 Tag 插件，用于实现 Markdown 不容易生成的样式，具体使用方式请见 [用户指南](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)。
+内置了一些 Tag 插件，用于实现 Markdown 不容易生成的样式，具体使用方式请见 [用户指南](https://fluid.ist/docs/guide/#tag-%E6%8F%92%E4%BB%B6)。
 
 ### 便签
 

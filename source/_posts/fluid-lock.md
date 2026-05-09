@@ -54,7 +54,7 @@ Hexo-Theme-Fluid项目地址：<https://github.com/fluid-dev/hexo-theme-fluid>
 
 #### （推荐！）Hexo注入
 
-[Hexo注入器](https://hexo.fluid-dev.com/posts/hexo-injector/)是一项Hexo5之后提出的功能.
+[Hexo注入器](https://fluid.ist/posts/hexo-injector/)是一项Hexo5之后提出的功能.
 编写注入代码，需要在博客的根目录下创建 scripts 文件夹，然后在里面任意命名创建一个 js 文件即可。
 
 例如创建一个 /blog/scripts/Tryment-Clock.js，内容为
